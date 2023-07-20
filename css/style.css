@@ -140,6 +140,7 @@ a:active {
 .sidebar .logo-title .description {
   font-size: 14px;
   color: #565654;
+  padding: 0 18px;
 }
 .sidebar .logo-title .logo {
   margin: 0 auto;
@@ -190,6 +191,7 @@ a:active {
 }
 .card {
   margin-left: 5px;
+  word-break: break-all;
 }
 .post {
   background-color: #fff;
