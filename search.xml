@@ -65,6 +65,58 @@
       </tags>
   </entry>
   <entry>
+    <title>备份豆瓣广播和日记教程</title>
+    <url>/2023/07/22/%E5%A4%87%E4%BB%BD%E8%B1%86%E7%93%A3%E5%B9%BF%E6%92%AD%E5%92%8C%E6%97%A5%E8%AE%B0%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p><strong>备份豆瓣广播和日记教程</strong></p>
+<p>因为一些众所周知的原因，写在互联网的东西，很容易全部消失，备份豆瓣广播和日记到本地刻不容缓，于是搜索教程</p>
+<p>备份广播和日记不是一个脚本，用到的技术工具Python，vscode</p>
+<span id="more"></span>
+
+<ol>
+<li><p>首先是备份豆瓣广播</p>
+<p><a href="https://github.com/Cosimo118/sprider_douban">豆瓣广播py文件下载</a></p>
+<p>我需要的是md文件并符合hexo博客格式，所以我进行了修改</p>
+<p>原文件部分</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#your filepath to save data</span><br><span class="line">with open(&#x27;your123.txt&#x27;,&#x27;a+&#x27;,encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">    for item in results:</span><br><span class="line">        f.write(item[1]+&quot;\n&quot;+item[0]+&quot;\n\n&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>修改部分</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#your filepath to save data</span><br><span class="line"></span><br><span class="line">for item in results:</span><br><span class="line">    #转换成时间数组</span><br><span class="line">    dt = item[1]</span><br><span class="line">    new_string=dt.strip(&#x27;&quot;&#x27;)</span><br><span class="line">    titleName = &#x27;微一说 &#x27;+new_string</span><br><span class="line">    timeArray = time.strptime(new_string, &quot;%Y-%m-%d %H:%M:%S&quot;)</span><br><span class="line">    #转换成新的时间格式(20160505-20:28:54)</span><br><span class="line">    dt_new = time.strftime(&quot;%Y%m%d%H%M%S&quot;,timeArray)</span><br><span class="line">    dt_Name = &#x27;微一&#x27;+dt_new</span><br><span class="line">    f = open(dt_Name+&#x27;.md&#x27;,&#x27;w+&#x27;,encoding=&#x27;utf-8&#x27;)</span><br><span class="line">    f.write(&#x27;---&#x27;+&quot;\n&quot;+&#x27;title: &#x27;+titleName +&quot;\n&quot;+&#x27;author: andy&#x27;+&quot;\n&quot;+&#x27;date: &#x27;+new_string+&quot;\n&quot;+&#x27;tags: 微一说&#x27;+&quot;\n&quot;+&#x27;categories: 随笔&#x27;+&quot;\n\n&quot;+&#x27;---&#x27;+&quot;\n&quot;+item[0]+&quot;\n&quot;+&#x27;&lt;!--more--&gt;&#x27;)</span><br><span class="line">    f.close()</span><br></pre></td></tr></table></figure>
+
+<p>原文件出现乱码，所以我添加了encoding&#x3D;’utf-8’</p>
+</li>
+<li><p>备份豆瓣日记</p>
+<p><a href="https://github.com/StanNW/DoubanDown">豆瓣广播py文件下载</a></p>
+<p>我需要的是md文件并符合hexo博客格式，所以我进行了修改</p>
+<p>原文件部分（会出错，定要修改）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#your filepath to save data</span><br><span class="line">        def save_md(self, filetype):</span><br><span class="line">            dirname = self.id + &#x27;豆瓣日记备份_&#x27; + filetype + &#x27;文件&#x27;</span><br><span class="line">            os.makedirs(dirname,exist_ok=True)</span><br><span class="line">            path = os.getcwd()</span><br><span class="line">            for i in range(self.note_res_num):</span><br><span class="line">                try:</span><br><span class="line">                    full_mdnote = &#x27;\n# &#x27; + self.backupnote_title_list[i] + &#x27;\n##### &#x27; \</span><br><span class="line">                        + self.backupnote_date_list[i] + &#x27;\n&#x27; + self.backupnote_text_list[i]</span><br><span class="line">                    filename = self.backupnote_date_list[i][0:10] + &#x27;_&#x27; + validate_title(self.backupnote_title_list[i])\</span><br><span class="line">                        + &#x27;.&#x27; + filetype</span><br><span class="line">                    with open(os.path.join(path,dirname,filename.replace(&#x27;/&#x27;,&#x27;_&#x27;)),&#x27;w&#x27;,encoding=&#x27;utf-8_sig&#x27;) as f:</span><br><span class="line">                        f.write(full_mdnote)</span><br><span class="line">                except Exception as e:</span><br><span class="line">                    print(f&#x27;保存第&#123;i+1&#125;篇日记失败。\n&#x27;,e) </span><br><span class="line">            print(f&quot;成功备份共&#123;self.note_res_num&#125;篇日志为&#123;filetype&#125;文件！&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>修改后部分</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def save_md(self, filetype):</span><br><span class="line">        dirname = self.id + &#x27;豆瓣日记备份_&#x27; + filetype + &#x27;文件&#x27;</span><br><span class="line">        os.makedirs(dirname,exist_ok=True)</span><br><span class="line">        path = os.getcwd()</span><br><span class="line">        for i in range(self.note_res_num):</span><br><span class="line">            try:</span><br><span class="line">                full_mdnote = &#x27;---&#x27; + &quot;\n&quot; + &#x27;title: &#x27; + self.backupnote_title_list[i] + &quot;\n&quot; + &#x27;author: andy&#x27; + &quot;\n&quot; + &#x27;date: &#x27; + self.backupnote_date_list[i] + &quot;\n&quot; + &#x27;tags: 日记&#x27; + &quot;\n&quot; + &#x27;categories: 日记DB&#x27; + &quot;\n&quot; + &#x27;---&#x27; + &quot;\n&quot; + self.backupnote_text_list[i]</span><br><span class="line">                filename = validate_title(self.backupnote_title_list[i])\</span><br><span class="line">                    + &#x27;.&#x27; + filetype</span><br><span class="line">                with open(os.path.join(filename.replace(&#x27;/&#x27;,&#x27;_&#x27;)),&#x27;w&#x27;,encoding=&#x27;utf-8_sig&#x27;) as f:</span><br><span class="line">                    f.write(full_mdnote)</span><br><span class="line">            except Exception as e:</span><br><span class="line">                print(f&#x27;保存第&#123;i+1&#125;篇日记失败。\n&#x27;,e) </span><br><span class="line">        print(f&quot;成功备份共&#123;self.note_res_num&#125;篇日志为&#123;filetype&#125;文件！&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>遇到的问题</p>
+<ol>
+<li><p><a href="https://zhuanlan.zhihu.com/p/356461216">Python 3写入TXT出现’gbk’ codec can’t encode错误的解决办法</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/weixin_45081575/article/details/93982570">python批量创建文件与批量创建文件夹</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/google19890102/article/details/51355282">Python中时间与时间戳之间的转换</a></p>
+</li>
+<li><p><a href="https://www.zhihu.com/tardis/sogou/ans/2338098552"> <a href="https://www.zhihu.com/tardis/sogou/qus/515209140">如何用python实现从字符串中删除引号呢？</a> </a></p>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>备份豆瓣教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>忙到没有睡意的一天</title>
     <url>/2023/07/20/%E5%BF%99%E5%88%B0%E6%B2%A1%E6%9C%89%E7%9D%A1%E6%84%8F%E7%9A%84%E4%B8%80%E5%A4%A9/</url>
     <content><![CDATA[<p>忙到这个时间，结束躺下也没有睡意了，也睡不着了，想想也不知道要做什么，看书？还是写点什么，也没什么感受，记录一下此刻……</p>
@@ -89,19 +141,57 @@
       </tags>
   </entry>
   <entry>
-    <title>万里挑一</title>
-    <url>/2023/06/04/riJi/%E4%B8%87%E9%87%8C%E6%8C%91%E4%B8%80/</url>
-    <content><![CDATA[<p>客厅里的万里挑一</p>
-<p>也许朦胧的世界才拥有朦胧的天堂，那里或许并不美丽，但却如此的独树一帜，累了，闲了，笑了，苦了，都会想着他，他就是他，从来没有记住过他，从来没有人忘记过他，终有一日，在漫天大雨的夜空中，感受到它的存在，总是想起那不懂的心痛，中德那万里挑一的感动</p>
-<blockquote>
-<p><img src="https://img1.doubanio.com/view/note/l/public/p94108387.jpg"></p>
-</blockquote>
+    <title>极简创建hexo个人博客Anatolo主题大整合</title>
+    <url>/2023/07/22/%E6%9E%81%E7%AE%80%E5%88%9B%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2Anatolo%E4%B8%BB%E9%A2%98%E5%A4%A7%E6%95%B4%E5%90%88/</url>
+    <content><![CDATA[<h1 id="一，简介"><a href="#一，简介" class="headerlink" title="一，简介"></a>一，简介</h1><p>ps：特别提醒，每个人阅读理解有很大区别，这和智商没关系，如果你一眼就觉得看不懂或者厌烦，就别停留，换个教程，换个搜索引擎，直到找到自己能够理解的，因为不是每一个人都可以当你的老师，也不是每个人写的教程你都能理解，别浪费时间。</p>
+<span id="more"></span>
+
+<p>每个教程未来扩展都有很多不同问题，所以你想要完美，就停下脚步，如果你想要满意，那么就开启你的征程吧。</p>
+<p>这个<a href="https://zhuanlan.zhihu.com/p/618864711">Hexo+Next主题搭建个人博客+优化全过程（完整详细版）</a>是我完成自己的博客后，看到的关于Next主题，看着挺不错的，不过折腾一番我还是喜欢原来的简约Anatolo</p>
+<p>以下是我制作的过程以及遇到的问题，搜索了很多，相信可以帮你或未来的自己节省很多的时间↓↓↓↓↓↓↓↓↓↓↓</p>
+<p><strong>开始吧</strong></p>
+<p>极简创建hexo个人博客Anatolo主题大整合</p>
+<p>三个部分，建议先通读一遍，先看是因为要提醒自己 做事情再没有产出的时候最忌讳三心二意，否则你会发现他丫的干了一天白忙活了。下定决心要哪个主题，直至产出为止。</p>
+<p>只要会用电脑，无论会不会代码都可以创建属于自己的个人博客，涉及到的关键技术不必在意，跟着教程走，复制，就完事。</p>
+<p>涉及到的关键技术，hexo,Anatolo主题，node，GitHub</p>
+<ol>
+<li><a href="#%E4%B8%80%EF%BC%8C%E7%AE%80%E4%BB%8B">简介</a></li>
+<li><a href="#%E4%BA%8C%EF%BC%8C%E5%88%9B%E4%BD%9C%E8%BF%87%E7%A8%8B">创作过程</a></li>
+<li><a href="%E4%B8%89%EF%BC%8C%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">遇到问题的解决办法</a></li>
+</ol>
+<h1 id="二，创作过程"><a href="#二，创作过程" class="headerlink" title="二，创作过程"></a>二，创作过程</h1><ol>
+<li><p>hexo博客以及部署到GitHub的保姆级教程，过程很详细</p>
+<p><a href="https://zhuanlan.zhihu.com/p/392994381">利用Github搭建自己的个人博客，看完就会</a></p>
+<p>遇到问题，跳转到  <a href="#%E4%B8%89%EF%BC%8C%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">第三阶段</a></p>
+</li>
+<li><p>hexo 可以换主题，我用的<a href="https://lhcfl.github.io/Anatolodemo/">Anatolo主题</a>，因为简约，可以根据自己的喜欢更换主题</p>
+<p>↓↓↓↓↓↓↓↓↓↓换主题教程↓↓↓↓↓↓↓↓↓↓↓</p>
+<p><a href="https://zhuanlan.zhihu.com/p/385525053">hexo博客换主题</a></p>
+</li>
+</ol>
+<h1 id="三，遇到问题的解决办法"><a href="#三，遇到问题的解决办法" class="headerlink" title="三，遇到问题的解决办法"></a>三，遇到问题的解决办法</h1><ol>
+<li><p><a href="https://blog.csdn.net/qq_38332436/article/details/81907686">hexo d 部署后总需要重新改域名解决</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/qq_24862137/article/details/94408847">Git Push报错:remote: error: GH007: Your push would publish a private email addres</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/qq_21808961/article/details/84476504">hexo d命令报错 ERROR Deployer not found: git</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/weixin_43971764/article/details/94885751">【Hexo博客搭建 • 篇一】本地博客主题修改后，推到远端服务器的操作细节</a></p>
+</li>
+<li><p>部署时保证README.md不被渲染</p>
+<p>在Hexo目录下的source根目录下添加一个,README.md。</p>
+<p>修改Hexo目录下的_config.yml。</p>
+<p>将skip_render参数的值设置上。skip_render: README.md</p>
+<p>保存退出即可。</p>
+<p>使用hexo d 命令就不会在渲染 README.md 这个文件了。</p>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>日记DB</category>
+        <category>教程</category>
       </categories>
       <tags>
-        <tag>日记</tag>
+        <tag>博客教程</tag>
       </tags>
   </entry>
   <entry>
@@ -126,6 +216,22 @@
 <p>Ps：巴西木2天干，2天湿润 0.3cm 2滴营养液 （相当于4天&#x2F;周期）</p>
 <p>Ps：虎皮兰和芦荟 要每天接受光照，夏天不能直射</p>
 <p>最最最重要的就是所有植物均不能在5°以下生存，宁热不冷（35°以下）</p>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>万里挑一</title>
+    <url>/2023/06/04/riJi/%E4%B8%87%E9%87%8C%E6%8C%91%E4%B8%80/</url>
+    <content><![CDATA[<p>客厅里的万里挑一</p>
+<p>也许朦胧的世界才拥有朦胧的天堂，那里或许并不美丽，但却如此的独树一帜，累了，闲了，笑了，苦了，都会想着他，他就是他，从来没有记住过他，从来没有人忘记过他，终有一日，在漫天大雨的夜空中，感受到它的存在，总是想起那不懂的心痛，中德那万里挑一的感动</p>
+<blockquote>
+<p><img src="https://img1.doubanio.com/view/note/l/public/p94108387.jpg"></p>
+</blockquote>
 ]]></content>
       <categories>
         <category>日记DB</category>
@@ -410,19 +516,6 @@
       </tags>
   </entry>
   <entry>
-    <title>他们问你想做什么？你想成为什么？</title>
-    <url>/2023/06/01/riJi/%E4%BB%96%E4%BB%AC%E9%97%AE%E4%BD%A0%E6%83%B3%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E4%BD%A0%E6%83%B3%E6%88%90%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-    <content><![CDATA[<p>但他们似乎并不明白</p>
-<p>如果一件东西再变成什么，或者再遭受什么，那么它再变成什么，并不是因为它能变成什么，它能变成什么，是因为它再变成什么<br>他在遭受什么，并不是因为他能遭受什么，他能遭受什么，是因为他在遭受什么<br>一件东西被喜爱，并不是因为他可爱，他可爱是因为他被喜爱<br>东西在变什么→它能变成什么<br>他能变成什么→他在变成什么</p>
-]]></content>
-      <categories>
-        <category>日记DB</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>今日情</title>
     <url>/2023/06/04/riJi/%E4%BB%8A%E6%97%A5%E6%83%85/</url>
     <content><![CDATA[<p>声音还是原来那么嘈杂，空气还是那么的沉重，以致我需要更多的力气才能够思考更少的力气，并能够感受到自己的存在，不过……</p>
@@ -433,6 +526,19 @@
 <blockquote>
 <p><img src="https://img9.doubanio.com/view/note/l/public/p94108375.jpg"></p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>他们问你想做什么？你想成为什么？</title>
+    <url>/2023/06/01/riJi/%E4%BB%96%E4%BB%AC%E9%97%AE%E4%BD%A0%E6%83%B3%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E4%BD%A0%E6%83%B3%E6%88%90%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
+    <content><![CDATA[<p>但他们似乎并不明白</p>
+<p>如果一件东西再变成什么，或者再遭受什么，那么它再变成什么，并不是因为它能变成什么，它能变成什么，是因为它再变成什么<br>他在遭受什么，并不是因为他能遭受什么，他能遭受什么，是因为他在遭受什么<br>一件东西被喜爱，并不是因为他可爱，他可爱是因为他被喜爱<br>东西在变什么→它能变成什么<br>他能变成什么→他在变成什么</p>
 ]]></content>
       <categories>
         <category>日记DB</category>
@@ -1617,18 +1723,6 @@
       </tags>
   </entry>
   <entry>
-    <title>穷则独善其身，达则兼济天下</title>
-    <url>/2023/05/31/riJi/%E7%A9%B7%E5%88%99%E7%8B%AC%E5%96%84%E5%85%B6%E8%BA%AB%EF%BC%8C%E8%BE%BE%E5%88%99%E5%85%BC%E6%B5%8E%E5%A4%A9%E4%B8%8B/</url>
-    <content><![CDATA[<p>穷则独善其身，达则兼济天下<br>有人需要某件事物，而你刚好有只，如果此人就在你的身旁帮助此人，也是顺其自然的事情了，但如果此人不在你的身旁，离你有距离，那么就不要试图去帮助，不然现实会嫌弃你手伸的太长，而教你做人<br>正如真理之钥匙一样，无论你是否发现它，这都是客观存在，而发现了他的你，就有了一把开启思维之门的钥匙，分享这把钥匙，从不需要吝啬，但是必须分享给距离你够近，至少是你能够触及到的地方，不要刻意为之，当有人有疑惑，刚巧遇见了你，分享给此人，也是顺其自然的事情了<br>有些人觉得别人很厉害，博学也好，能力也罢，但你短暂从这些人的手里得来，真理之钥石，不要妄自菲薄，你的人生有很多扇门，刚巧此人的钥匙能够开启，感谢倒也无可厚非，但是信仰膜拜大可不必，未来还有很多扇未开启的门，过去你开启了无数的门，所以不要时刻觉得别人比自己优秀，每个人需要走的路不同罢了</p>
-]]></content>
-      <categories>
-        <category>日记DB</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>睡着了</title>
     <url>/2023/06/11/riJi/%E7%9D%A1%E7%9D%80%E4%BA%86/</url>
     <content><![CDATA[<p>睡着了</p>
@@ -1644,6 +1738,18 @@
 <blockquote>
 <p><img src="https://img9.doubanio.com/view/note/l/public/p94186274.jpg"></p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>穷则独善其身，达则兼济天下</title>
+    <url>/2023/05/31/riJi/%E7%A9%B7%E5%88%99%E7%8B%AC%E5%96%84%E5%85%B6%E8%BA%AB%EF%BC%8C%E8%BE%BE%E5%88%99%E5%85%BC%E6%B5%8E%E5%A4%A9%E4%B8%8B/</url>
+    <content><![CDATA[<p>穷则独善其身，达则兼济天下<br>有人需要某件事物，而你刚好有只，如果此人就在你的身旁帮助此人，也是顺其自然的事情了，但如果此人不在你的身旁，离你有距离，那么就不要试图去帮助，不然现实会嫌弃你手伸的太长，而教你做人<br>正如真理之钥匙一样，无论你是否发现它，这都是客观存在，而发现了他的你，就有了一把开启思维之门的钥匙，分享这把钥匙，从不需要吝啬，但是必须分享给距离你够近，至少是你能够触及到的地方，不要刻意为之，当有人有疑惑，刚巧遇见了你，分享给此人，也是顺其自然的事情了<br>有些人觉得别人很厉害，博学也好，能力也罢，但你短暂从这些人的手里得来，真理之钥石，不要妄自菲薄，你的人生有很多扇门，刚巧此人的钥匙能够开启，感谢倒也无可厚非，但是信仰膜拜大可不必，未来还有很多扇未开启的门，过去你开启了无数的门，所以不要时刻觉得别人比自己优秀，每个人需要走的路不同罢了</p>
 ]]></content>
       <categories>
         <category>日记DB</category>
@@ -2108,9 +2214,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-28 16:04:31</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160431/</url>
-    <content><![CDATA[<p>女性朋友技巧一衣服没有合适的衣服，没有必要进行下一步，二女人不喜欢负能量，废话，男人也不喜欢说话，不包含负面信息，三，通过交流女人需要的事物力，需要工作金钱，讲述一些简单容易获取的工作内容，其他四女人喜欢夸赞学习多的美丽之类的词汇，五，不在一个女人身上浪费太多时间，女性朋友就像工作一样接触越多越气场</p>
+    <title>微一说 2023-05-28 16:04:20</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160420/</url>
+    <content><![CDATA[<p>记录怀念以及珍藏过去的逝去的，为以后的人留下珍贵的回忆和研究价值</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2120,9 +2226,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-28 16:04:20</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160420/</url>
-    <content><![CDATA[<p>记录怀念以及珍藏过去的逝去的，为以后的人留下珍贵的回忆和研究价值</p>
+    <title>微一说 2023-05-28 16:04:31</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160431/</url>
+    <content><![CDATA[<p>女性朋友技巧一衣服没有合适的衣服，没有必要进行下一步，二女人不喜欢负能量，废话，男人也不喜欢说话，不包含负面信息，三，通过交流女人需要的事物力，需要工作金钱，讲述一些简单容易获取的工作内容，其他四女人喜欢夸赞学习多的美丽之类的词汇，五，不在一个女人身上浪费太多时间，女性朋友就像工作一样接触越多越气场</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2444,18 +2550,6 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-28 21:08:48</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210848/</url>
-    <content><![CDATA[<p>想要的得不到<br>何必去说，<br>去问<br>去答</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微一说 2023-05-28 21:09:41</title>
     <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210941/</url>
     <content><![CDATA[<p>书写的世界，世界在书中，现实的世界，世界在现实中</p>
@@ -2471,6 +2565,18 @@
     <title>微一说 2023-05-28 21:11:42</title>
     <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528211142/</url>
     <content><![CDATA[<p>其实你我都知道发生了什么，不知者嘲其愚昧，知者嘲其可笑，人犯下的错，人创造的问题，愤怒只能令问题尘封，而不是解决。<br>愤怒再怎么转嫁也不会转嫁到一个工具上。他会转嫁到一个人身上，一群人身上，一个组织身上。<br>那些始作俑者自认为自己玩了好一通，玩的好开心。由此她们的空虚，他们的无可奈何，可见一斑，更能看出他们的可悲，可笑之处。<br>所有问题的根源都是人<br>人类的源头被污染了，没有什么解决办法。你我皆是被污染之人。<br>唯有重塑，就像电脑中了病毒，只能重装系统一般。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微一说 2023-05-28 21:08:48</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210848/</url>
+    <content><![CDATA[<p>想要的得不到<br>何必去说，<br>去问<br>去答</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2792,9 +2898,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-28 22:03:31</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528220331/</url>
-    <content><![CDATA[<p>花钱只能买到普通形式的服务，而对于在普通服务之外的人消费而言是不划算的。举个例子，不懂宽带路由器安装的是，花钱买到的服务，不仅仅是宽带本身所带来的服务，而包括安装宽带路由器过程的认知和体验，懂宽带路由器安装的恰恰没有这种认识和体验，因为所熟知，所以消费带来的体验和认知却大打折扣。生活中任何形式的花钱消费都是如此，所以有些人会说两块钱的可乐，第一口就是值1.99。就是这么回事，熟知的人再花钱消费所以带来的体验也就只有0.01。不熟知的人不仅有1.99而且还有0.01。生活工作消费体验就是如此，即使再如何的变相销售，在没被意识之前，也归为不熟知，而在意识以后，所带来的负增长和负面效应是成指数增长的，就像对电影的期望值一样，对电影熟知又渴望新的认知，而如果达不到期望值，抱怨，调侃，就成了常规操作了，看之前和看之后就是如此。所以变相销售就是一锤子买卖，把不好的效应都就给了市场，到最后市场顶不住时，就需要新的血液重新来过，把新的生命带进这个变相销售的市场，有出有进，可突然有一天没有新的血液进去或者进去的没有流出去的多，解决的办法就只有一个，那就是缩减市场。当然不同市场串通也不是不可以，但结局依旧如此，而且拖延所带来的负面效应则给未来留下更严重的不可解决。所以花钱带来的东西是一样的，但依旧有的很亏很亏。</p>
+    <title>微一说 2023-05-28 22:05:18</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528220518/</url>
+    <content><![CDATA[<p>似乎厌倦了批判性和讲述性的哲学，还会有什么类型的哲学呢？艺术？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2804,9 +2910,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-28 22:05:18</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528220518/</url>
-    <content><![CDATA[<p>似乎厌倦了批判性和讲述性的哲学，还会有什么类型的哲学呢？艺术？</p>
+    <title>微一说 2023-05-28 22:03:31</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528220331/</url>
+    <content><![CDATA[<p>花钱只能买到普通形式的服务，而对于在普通服务之外的人消费而言是不划算的。举个例子，不懂宽带路由器安装的是，花钱买到的服务，不仅仅是宽带本身所带来的服务，而包括安装宽带路由器过程的认知和体验，懂宽带路由器安装的恰恰没有这种认识和体验，因为所熟知，所以消费带来的体验和认知却大打折扣。生活中任何形式的花钱消费都是如此，所以有些人会说两块钱的可乐，第一口就是值1.99。就是这么回事，熟知的人再花钱消费所以带来的体验也就只有0.01。不熟知的人不仅有1.99而且还有0.01。生活工作消费体验就是如此，即使再如何的变相销售，在没被意识之前，也归为不熟知，而在意识以后，所带来的负增长和负面效应是成指数增长的，就像对电影的期望值一样，对电影熟知又渴望新的认知，而如果达不到期望值，抱怨，调侃，就成了常规操作了，看之前和看之后就是如此。所以变相销售就是一锤子买卖，把不好的效应都就给了市场，到最后市场顶不住时，就需要新的血液重新来过，把新的生命带进这个变相销售的市场，有出有进，可突然有一天没有新的血液进去或者进去的没有流出去的多，解决的办法就只有一个，那就是缩减市场。当然不同市场串通也不是不可以，但结局依旧如此，而且拖延所带来的负面效应则给未来留下更严重的不可解决。所以花钱带来的东西是一样的，但依旧有的很亏很亏。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -3188,9 +3294,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-29 06:21:37</title>
-    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529062137/</url>
-    <content><![CDATA[<p>你曾经承受过得，都将成为你的力量，你的智慧，你的勇气，你的坚强。<br>人如果不经历永远都不会成长，无论听到过什么或是看到过什么。吃无数次的亏，就是逼迫自己成长。加油加油加油加油加油，别怂，也别怕，你比所有人都坚强勇敢，并且已经做好了准备。</p>
+    <title>微一说 2023-05-29 06:23:42</title>
+    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529062342/</url>
+    <content><![CDATA[<p>既然不能把手伸长，那就顺势把手缩起，寒冬腊月，反正都是饿肚子，暖暖手也不错啊。嘿嘿嘿，这人啊，一但学会顺势而为就特别泥鳅。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -3200,9 +3306,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-05-29 06:23:42</title>
-    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529062342/</url>
-    <content><![CDATA[<p>既然不能把手伸长，那就顺势把手缩起，寒冬腊月，反正都是饿肚子，暖暖手也不错啊。嘿嘿嘿，这人啊，一但学会顺势而为就特别泥鳅。</p>
+    <title>微一说 2023-05-29 06:21:37</title>
+    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529062137/</url>
+    <content><![CDATA[<p>你曾经承受过得，都将成为你的力量，你的智慧，你的勇气，你的坚强。<br>人如果不经历永远都不会成长，无论听到过什么或是看到过什么。吃无数次的亏，就是逼迫自己成长。加油加油加油加油加油，别怂，也别怕，你比所有人都坚强勇敢，并且已经做好了准备。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5192,9 +5298,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-01 13:29:42</title>
-    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601132942/</url>
-    <content><![CDATA[<p>总有说告诉你，你不说别人怎么知道，可他们不知道有些事情，有些时间，最怕是没有希望，而又明知山已荒，地已枯，海已干，仍不放弃寻找希望过程中的纠结和痛苦。<br>据说被腹蛇咬了一口的人不肯把自己的遭遇告诉任何人，除非那人也同样被咬了一口，能够了解和谅解他所做的事和迫于痛苦而说出的话</p>
+    <title>微一说 2023-06-01 13:19:04</title>
+    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601131904/</url>
+    <content><![CDATA[<p>衣服破了，可以补，房子倒了也可以改，东西坏了也可以修，只是这人心啊，一旦受伤好难恢复，受过伤的心，需用真心来修补<br>注定要用生命写故事的人，<br>人生最大的美德是饶恕<br>月倚西楼更鼓罢，不打更<br>渔夫收网转回家，不打鱼<br>雨过天晴何需伞，不打伞<br>铁匠熄灯正喝茶，不打铁<br>樵夫担柴早下山，不打柴<br>猎户唤狗收猎叉，不打猎<br>美人下了秋千架，不打秋千<br>由郎改行谋生涯，不打油<br>人老不堪棒槌苦，祈求皇上饶恕他<br>电视剧台词<br>八个不打</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5204,9 +5310,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-01 13:19:04</title>
-    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601131904/</url>
-    <content><![CDATA[<p>衣服破了，可以补，房子倒了也可以改，东西坏了也可以修，只是这人心啊，一旦受伤好难恢复，受过伤的心，需用真心来修补<br>注定要用生命写故事的人，<br>人生最大的美德是饶恕<br>月倚西楼更鼓罢，不打更<br>渔夫收网转回家，不打鱼<br>雨过天晴何需伞，不打伞<br>铁匠熄灯正喝茶，不打铁<br>樵夫担柴早下山，不打柴<br>猎户唤狗收猎叉，不打猎<br>美人下了秋千架，不打秋千<br>由郎改行谋生涯，不打油<br>人老不堪棒槌苦，祈求皇上饶恕他<br>电视剧台词<br>八个不打</p>
+    <title>微一说 2023-06-01 13:29:42</title>
+    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601132942/</url>
+    <content><![CDATA[<p>总有说告诉你，你不说别人怎么知道，可他们不知道有些事情，有些时间，最怕是没有希望，而又明知山已荒，地已枯，海已干，仍不放弃寻找希望过程中的纠结和痛苦。<br>据说被腹蛇咬了一口的人不肯把自己的遭遇告诉任何人，除非那人也同样被咬了一口，能够了解和谅解他所做的事和迫于痛苦而说出的话</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5768,9 +5874,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-03 11:59:08</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115908/</url>
-    <content><![CDATA[<p>用描述空间的词汇描述人时，通常能起到意想不到的效果</p>
+    <title>微一说 2023-06-03 11:56:41</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115641/</url>
+    <content><![CDATA[<p>狭小的旁观者总以为别人选择什么便是因为喜欢，其实有可能是讨厌，憎恶。但又有什么用呢？演技不好的人也有演技卓绝的时刻，请在别人需要安静时闭嘴吧</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5780,9 +5886,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-03 11:56:41</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115641/</url>
-    <content><![CDATA[<p>狭小的旁观者总以为别人选择什么便是因为喜欢，其实有可能是讨厌，憎恶。但又有什么用呢？演技不好的人也有演技卓绝的时刻，请在别人需要安静时闭嘴吧</p>
+    <title>微一说 2023-06-03 11:59:08</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115908/</url>
+    <content><![CDATA[<p>用描述空间的词汇描述人时，通常能起到意想不到的效果</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5912,18 +6018,6 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-03 12:28:55</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603122855/</url>
-    <content><![CDATA[<p>如果这个世界做什么事情都要许愿，或者说出来才能完成的话，那么我将用余生去摧毁这不堪的世界秩序，如果是谁制定的，那么就会去摧毁这些人以及那些以这种方式得利的人，甚至于是信徒，但我坚信不是这样的，同时我也坚信我不是唯一的</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微一说 2023-06-03 12:44:45</title>
     <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603124445/</url>
     <content><![CDATA[<p>有些人，人前做着大义凛然样子，说着冠冕堂皇的话，背地里却做着完全相反的事，表面上告诫所有人要准时，背地里响彻天际的闹钟怎么也叫不醒，他们难道不知道再怎么微小 的善举也比无限大的善意高大吗？他们知道，他们甚至告诫别人要行动起来，为了他们行动，污秽的人类</p>
@@ -5939,6 +6033,18 @@
     <title>微一说 2023-06-03 12:47:12</title>
     <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603124712/</url>
     <content><![CDATA[<p>你们的恶却要我来承担，他们想让你们变恶，这样你们才能拿到你们想要的东西，然后他们就可以作恶，他们让所有人和他们一样饿，否则就是阻止别人拿到别人需要的东西</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微一说 2023-06-03 12:28:55</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603122855/</url>
+    <content><![CDATA[<p>如果这个世界做什么事情都要许愿，或者说出来才能完成的话，那么我将用余生去摧毁这不堪的世界秩序，如果是谁制定的，那么就会去摧毁这些人以及那些以这种方式得利的人，甚至于是信徒，但我坚信不是这样的，同时我也坚信我不是唯一的</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6095,18 +6201,6 @@
     <title>微一说 2023-06-03 16:49:02</title>
     <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603164902/</url>
     <content><![CDATA[<p>一个拥有很多财富的人说对钱没有兴趣，很多人都可以理解<br>一个很是贫穷的人，似乎就不能说对钱没兴趣，如此会被说成虚伪<br>难道不应该是贫穷的人才有理由，而财富的人没有理由吗？是非颠倒，还是统治阶级的思想欺骗？</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微一说 2023-06-03 16:50:28</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603165028/</url>
-    <content><![CDATA[<p>如果你觉得被操纵了，欺骗了，戏耍了，那你唯一能做的就是行动言语，保持不变，直到证明此类事件已经消失过去了<br>万事万物皆有相连，也皆无关取决于你在遇到听到见到之后所做的决定，如果之后做的不相关，那便无关，如果之后做的受其影响，那么便是相关相不相关？取决于之后做的事情，而非之前假想的事情</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6656,9 +6750,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-05 17:12:28</title>
-    <url>/2023/06/05/weiyiSay/%E5%BE%AE%E4%B8%8020230605171228/</url>
-    <content><![CDATA[<p>看到那些资讯下方，评论一边倒，无论你觉得多么合理，一定有问题，做到不看，不听，不说。</p>
+    <title>微一说 2023-06-05 17:11:56</title>
+    <url>/2023/06/05/weiyiSay/%E5%BE%AE%E4%B8%8020230605171156/</url>
+    <content><![CDATA[<p>不能直接给你带来利益的专家&#x2F;名人，一定是不存在的，一定是假的，否认他&#x2F;他们的存在</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6668,9 +6762,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-05 17:11:56</title>
-    <url>/2023/06/05/weiyiSay/%E5%BE%AE%E4%B8%8020230605171156/</url>
-    <content><![CDATA[<p>不能直接给你带来利益的专家&#x2F;名人，一定是不存在的，一定是假的，否认他&#x2F;他们的存在</p>
+    <title>微一说 2023-06-05 17:12:28</title>
+    <url>/2023/06/05/weiyiSay/%E5%BE%AE%E4%B8%8020230605171228/</url>
+    <content><![CDATA[<p>看到那些资讯下方，评论一边倒，无论你觉得多么合理，一定有问题，做到不看，不听，不说。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -8768,6 +8862,18 @@
       </tags>
   </entry>
   <entry>
+    <title>微一说 2023-06-25 12:04:36</title>
+    <url>/2023/06/25/weiyiSay/%E5%BE%AE%E4%B8%8020230625120436/</url>
+    <content><![CDATA[<p>哪里有什么一生一世，不必等待什么信号和征兆，行动起来，不必在意顾虑，为自己想要的世界挥汗发声，也不至自己的权益受到侵害时发出“自扫门前雪，没人会帮你”的悔恨。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微一说 2023-06-25 16:16:10</title>
     <url>/2023/06/25/weiyiSay/%E5%BE%AE%E4%B8%8020230625161610/</url>
     <content><![CDATA[<p>一个有趣的现象，有些事情你想到了很容易就去做了，而且很容易就坚持了，即使你没能定下闹钟。而有些事情你想到了却不会去做，而且即使做了，定了闹钟了也很难坚持。即使前者比后者更难，很奇怪？</p>
@@ -8783,18 +8889,6 @@
     <title>微一说 2023-06-25 17:59:32</title>
     <url>/2023/06/25/weiyiSay/%E5%BE%AE%E4%B8%8020230625175932/</url>
     <content><![CDATA[<p>每当你准备想要并且努力促使一切变得更好时，就好像把自己的把柄交到他们手上一样，近之则不逊，远之则怨，有些事情他们还是异想天开了，你们能控制的只有你们自己，当你们试图控制别人的时候就是你们衰败的开始，竟然还没悔悟…</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微一说 2023-06-25 12:04:36</title>
-    <url>/2023/06/25/weiyiSay/%E5%BE%AE%E4%B8%8020230625120436/</url>
-    <content><![CDATA[<p>哪里有什么一生一世，不必等待什么信号和征兆，行动起来，不必在意顾虑，为自己想要的世界挥汗发声，也不至自己的权益受到侵害时发出“自扫门前雪，没人会帮你”的悔恨。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -8840,9 +8934,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-26 08:17:34</title>
-    <url>/2023/06/26/weiyiSay/%E5%BE%AE%E4%B8%8020230626081734/</url>
-    <content><![CDATA[<p>行动和规范哪个更重要？</p>
+    <title>微一说 2023-06-26 08:16:42</title>
+    <url>/2023/06/26/weiyiSay/%E5%BE%AE%E4%B8%8020230626081642/</url>
+    <content><![CDATA[<p>总有那么些“智者”当别人在做什么自我改变的行动时，指导行为“规范”，以至于别人自我评价过低或在做的时候思考做的不符合规范而没有坚持以至于放弃没有任何改变。<br>如果没再做吧，便讽刺别人没长（chang）性<br>做了吧，在旁边嚼舌根，<br>没成吧，说你看这就是没按照我说的做的下场，<br>成了吧，你看都是我的功劳，要不是在我的指导下也不会成功。<br>长点脑子吧，说话的人指导着做事的人应该怎么做。<br>一个人没办法原地引体向上规范通过跳跃助力的方式单杠锻炼自己的臂力和肌肉，这“智者”便会出现指导，你这不符合规范，你应该这样这样做，以此彰显自己“活着”的价值。<br>难道老子不知道吗？老子道德经都写出来了，老子会不知道？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -8852,9 +8946,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-06-26 08:16:42</title>
-    <url>/2023/06/26/weiyiSay/%E5%BE%AE%E4%B8%8020230626081642/</url>
-    <content><![CDATA[<p>总有那么些“智者”当别人在做什么自我改变的行动时，指导行为“规范”，以至于别人自我评价过低或在做的时候思考做的不符合规范而没有坚持以至于放弃没有任何改变。<br>如果没再做吧，便讽刺别人没长（chang）性<br>做了吧，在旁边嚼舌根，<br>没成吧，说你看这就是没按照我说的做的下场，<br>成了吧，你看都是我的功劳，要不是在我的指导下也不会成功。<br>长点脑子吧，说话的人指导着做事的人应该怎么做。<br>一个人没办法原地引体向上规范通过跳跃助力的方式单杠锻炼自己的臂力和肌肉，这“智者”便会出现指导，你这不符合规范，你应该这样这样做，以此彰显自己“活着”的价值。<br>难道老子不知道吗？老子道德经都写出来了，老子会不知道？</p>
+    <title>微一说 2023-06-26 08:17:34</title>
+    <url>/2023/06/26/weiyiSay/%E5%BE%AE%E4%B8%8020230626081734/</url>
+    <content><![CDATA[<p>行动和规范哪个更重要？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -9704,6 +9798,18 @@
       </tags>
   </entry>
   <entry>
+    <title>微一说 2023-07-02 10:49:57</title>
+    <url>/2023/07/02/weiyiSay/%E5%BE%AE%E4%B8%8020230702104957/</url>
+    <content><![CDATA[<p>沉默只会让事情朝着不可控的方向发展，说错了又能怎么样呢？一个孩子说错了多少话不会被责怪，还会夸他做得好，而一个成人说的无论多么有道理都会被指责，为什么？人性？世界发展出来的不好，很多沉默者都有责任，因为这个世界的规则，人类社会的规则就是你不指出这个问题，那说明这个没问题，沉默者往往能看到的很多社会问题，但他们默不作声…</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微一说 2023-07-02 10:52:31</title>
     <url>/2023/07/02/weiyiSay/%E5%BE%AE%E4%B8%8020230702105231/</url>
     <content><![CDATA[<p>说错了便要惩罚，这就是负责人？</p>
@@ -9719,18 +9825,6 @@
     <title>微一说 2023-07-02 11:00:23</title>
     <url>/2023/07/02/weiyiSay/%E5%BE%AE%E4%B8%8020230702110023/</url>
     <content><![CDATA[<p>谁得罪他们了，他们就转找谁的错事，穿小鞋，给麻烦。谁人名下无错事，为的什么都自然清楚…</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微一说 2023-07-02 10:49:57</title>
-    <url>/2023/07/02/weiyiSay/%E5%BE%AE%E4%B8%8020230702104957/</url>
-    <content><![CDATA[<p>沉默只会让事情朝着不可控的方向发展，说错了又能怎么样呢？一个孩子说错了多少话不会被责怪，还会夸他做得好，而一个成人说的无论多么有道理都会被指责，为什么？人性？世界发展出来的不好，很多沉默者都有责任，因为这个世界的规则，人类社会的规则就是你不指出这个问题，那说明这个没问题，沉默者往往能看到的很多社会问题，但他们默不作声…</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -9872,6 +9966,18 @@
       </tags>
   </entry>
   <entry>
+    <title>微一说 2023-07-03 15:55:53</title>
+    <url>/2023/07/03/weiyiSay/%E5%BE%AE%E4%B8%8020230703155553/</url>
+    <content><![CDATA[<p>人类是无法冲破由遇事第一反应是被迫害所带来的无形屏障。<br>如果一个人注意力都在被迫害，人情世故，基本上就注定了不可能创新创造…<br>如果大环境使其无法专注。成功，提升，幸运，是不会站队站在其身边的…</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微一说 2023-07-03 16:02:01</title>
     <url>/2023/07/03/weiyiSay/%E5%BE%AE%E4%B8%8020230703160201/</url>
     <content><![CDATA[<p>目标从来都不是目的，目标可以带来专注，专注才是目的。<br>有很多事情可以保持专注，所以不要纠结与没有目标的问题上，而要关注你做那些事情可以让你保持专注。越多越好，记录下来…这些事情将在未来某一时刻帮助你一路过关斩将，披风斩棘，所向披靡…</p>
@@ -9899,18 +10005,6 @@
     <title>微一说 2023-07-03 19:19:50</title>
     <url>/2023/07/03/weiyiSay/%E5%BE%AE%E4%B8%8020230703191950/</url>
     <content><![CDATA[<p>当一句很有道理的话，被支持或点赞。如果是名人名言，被别人反对或抨击的概率就会越小，那么自己支持或点赞被反对和抨击的概率也会越小。所以很多人谨小慎微，是因为没有自己的认识和观点的。通常什么人容易受到攻击，有认识有观点的人。那这代表所有人吗？当然不是所有人，这里想表达的并不是少数人或多数人的问题。可我为什么又要解释呢？解释了就不会有不同观点的人了吗？不是这样吧！如果你说把自己的观点说的越完善，不就越有道理吗？对不起，这里并不是要取悦谁或者完善什么，一个你有认识而担心不完善怕被攻击从而不发表观点？非我所想…！一个观点，攻击，完善？名人名言完善？说来也奇怪，如果你沉默了，不发表了，不被攻击了，所以你的观点和认识是不存在了吗？还是自己不会受到伤害，被迫害？大概率是后者吧！由此活下来的人如果不能快乐享受一生的话，那么这人大概率也就是个别人的财产吧…谈不上是人或活着…</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微一说 2023-07-03 15:55:53</title>
-    <url>/2023/07/03/weiyiSay/%E5%BE%AE%E4%B8%8020230703155553/</url>
-    <content><![CDATA[<p>人类是无法冲破由遇事第一反应是被迫害所带来的无形屏障。<br>如果一个人注意力都在被迫害，人情世故，基本上就注定了不可能创新创造…<br>如果大环境使其无法专注。成功，提升，幸运，是不会站队站在其身边的…</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -9992,9 +10086,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-04 16:26:52</title>
-    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704162652/</url>
-    <content><![CDATA[<p>虽然我们每一个人都受制于历史的局限，并因此正在经历着无可奈何，但我们仍旧要保持愉悦的心情和健康的体魄，这也是自己唯一能做，而他们无法阻止的事情，只有这样才能让当下成为历史，而未来成为可能，让可能去成就梦想，你明白吗？</p>
+    <title>微一说 2023-07-04 16:16:56</title>
+    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704161656/</url>
+    <content><![CDATA[<p>烈日<br>清，陈忠平<br>树欲生凉尔何烈。劳民困顿无可歇。<br>日下偏有阴潮处，繁衍蚊蝇吮人血。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10004,9 +10098,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-04 16:16:56</title>
-    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704161656/</url>
-    <content><![CDATA[<p>烈日<br>清，陈忠平<br>树欲生凉尔何烈。劳民困顿无可歇。<br>日下偏有阴潮处，繁衍蚊蝇吮人血。</p>
+    <title>微一说 2023-07-04 16:26:52</title>
+    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704162652/</url>
+    <content><![CDATA[<p>虽然我们每一个人都受制于历史的局限，并因此正在经历着无可奈何，但我们仍旧要保持愉悦的心情和健康的体魄，这也是自己唯一能做，而他们无法阻止的事情，只有这样才能让当下成为历史，而未来成为可能，让可能去成就梦想，你明白吗？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10556,6 +10650,18 @@
       </tags>
   </entry>
   <entry>
+    <title>微一说 2023-07-07 16:28:48</title>
+    <url>/2023/07/07/weiyiSay/%E5%BE%AE%E4%B8%8020230707162848/</url>
+    <content><![CDATA[<p>因为感觉离你越来越远，<br>所以离开了<br>离开了<br>时间就那样的过去了<br>心还是<br>模样里都过去了<br>也不再期盼，<br>因为你在的世界<br>就在我的眼前循环着<br>一视，一视，又一视</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微一说 2023-07-07 16:49:45</title>
     <url>/2023/07/07/weiyiSay/%E5%BE%AE%E4%B8%8020230707164945/</url>
     <content><![CDATA[<p>有些事情睁开眼，闭上眼都看不清，都很模糊，唯有睁一只眼闭一只眼才能看的更轻，更清……</p>
@@ -10595,18 +10701,6 @@
     <title>微一说 2023-07-07 22:09:06</title>
     <url>/2023/07/07/weiyiSay/%E5%BE%AE%E4%B8%8020230707220906/</url>
     <content><![CDATA[<p>当社会足够炎热的时候，光明就会出现灼伤的情况，太阳就不再友好，看来，寒冬将至啊……</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微一说 2023-07-07 16:28:48</title>
-    <url>/2023/07/07/weiyiSay/%E5%BE%AE%E4%B8%8020230707162848/</url>
-    <content><![CDATA[<p>因为感觉离你越来越远，<br>所以离开了<br>离开了<br>时间就那样的过去了<br>心还是<br>模样里都过去了<br>也不再期盼，<br>因为你在的世界<br>就在我的眼前循环着<br>一视，一视，又一视</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10724,9 +10818,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-08 18:59:06</title>
-    <url>/2023/07/08/weiyiSay/%E5%BE%AE%E4%B8%8020230708185906/</url>
-    <content><![CDATA[<p>云啊，云，雨啊，雨，你可能听到我的声音。听到我的心声。我在心里把秘密告诉了你。我知道，或许有人有无数赞美之词夸赞过你。以我的智慧，可能永远无法得到你的芳心。但我将我的秘密告诉你之后，很是舒适。有了你的美貌，让所有生命能够仰望，似乎一下就将所有生命的头疼病都给治好。我已经将我的秘密告诉了你，你不要讲秘密和别人讲哦。这是我和你之间的秘密。</p>
+    <title>微一说 2023-07-08 19:33:42</title>
+    <url>/2023/07/08/weiyiSay/%E5%BE%AE%E4%B8%8020230708193342/</url>
+    <content><![CDATA[<p>你是如此的艳压群芳啊。谁才能够配得上你呢？如此的急不可耐，急不可耐啊。就是为了遇见你。时刻看到你。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10736,9 +10830,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-08 19:33:42</title>
-    <url>/2023/07/08/weiyiSay/%E5%BE%AE%E4%B8%8020230708193342/</url>
-    <content><![CDATA[<p>你是如此的艳压群芳啊。谁才能够配得上你呢？如此的急不可耐，急不可耐啊。就是为了遇见你。时刻看到你。</p>
+    <title>微一说 2023-07-08 18:59:06</title>
+    <url>/2023/07/08/weiyiSay/%E5%BE%AE%E4%B8%8020230708185906/</url>
+    <content><![CDATA[<p>云啊，云，雨啊，雨，你可能听到我的声音。听到我的心声。我在心里把秘密告诉了你。我知道，或许有人有无数赞美之词夸赞过你。以我的智慧，可能永远无法得到你的芳心。但我将我的秘密告诉你之后，很是舒适。有了你的美貌，让所有生命能够仰望，似乎一下就将所有生命的头疼病都给治好。我已经将我的秘密告诉了你，你不要讲秘密和别人讲哦。这是我和你之间的秘密。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10820,9 +10914,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-09 16:20:54</title>
-    <url>/2023/07/09/weiyiSay/%E5%BE%AE%E4%B8%8020230709162054/</url>
-    <content><![CDATA[<p>控制了天气，却没办法控制气候，却没办法控制温度，内心一定是奇痒难忍吧！</p>
+    <title>微一说 2023-07-09 13:28:31</title>
+    <url>/2023/07/09/weiyiSay/%E5%BE%AE%E4%B8%8020230709132831/</url>
+    <content><![CDATA[<p>我有个问题，那么稍纵即逝的灵感和想法。目的为何？彰显自己的重要性吗？还只是时机未到？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10832,9 +10926,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-09 13:28:31</title>
-    <url>/2023/07/09/weiyiSay/%E5%BE%AE%E4%B8%8020230709132831/</url>
-    <content><![CDATA[<p>我有个问题，那么稍纵即逝的灵感和想法。目的为何？彰显自己的重要性吗？还只是时机未到？</p>
+    <title>微一说 2023-07-09 16:20:54</title>
+    <url>/2023/07/09/weiyiSay/%E5%BE%AE%E4%B8%8020230709162054/</url>
+    <content><![CDATA[<p>控制了天气，却没办法控制气候，却没办法控制温度，内心一定是奇痒难忍吧！</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -11744,9 +11838,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-15 21:26:21</title>
-    <url>/2023/07/15/weiyiSay/%E5%BE%AE%E4%B8%8020230715212621/</url>
-    <content><![CDATA[<p>总还是心生畏惧？悸动？为什么呢？在担心哪些被看到了就会成为既定事实而无法有所改变吗？谱写了一本预测未来的纪实吗？还是说仅仅是启动了内心的自我防御机制，太多不明白，也有太多的手足无措，逆来顺受本就没什么是准备好的。</p>
+    <title>微一说 2023-07-15 21:28:49</title>
+    <url>/2023/07/15/weiyiSay/%E5%BE%AE%E4%B8%8020230715212849/</url>
+    <content><![CDATA[<p>想起了甘道夫，曾有很长的一段时间，记忆给我开了个玩笑，因为我记得甘道夫和老夫子是一个人，至少模糊的记忆是这个样子的，不太能够直接描述其中太多的差别，仅仅串联记忆，老夫子是甘道夫，甘道夫是老夫子，没有形象，没有故事情节，单纯的记成了一个。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -11756,9 +11850,9 @@
       </tags>
   </entry>
   <entry>
-    <title>微一说 2023-07-15 21:28:49</title>
-    <url>/2023/07/15/weiyiSay/%E5%BE%AE%E4%B8%8020230715212849/</url>
-    <content><![CDATA[<p>想起了甘道夫，曾有很长的一段时间，记忆给我开了个玩笑，因为我记得甘道夫和老夫子是一个人，至少模糊的记忆是这个样子的，不太能够直接描述其中太多的差别，仅仅串联记忆，老夫子是甘道夫，甘道夫是老夫子，没有形象，没有故事情节，单纯的记成了一个。</p>
+    <title>微一说 2023-07-15 21:26:21</title>
+    <url>/2023/07/15/weiyiSay/%E5%BE%AE%E4%B8%8020230715212621/</url>
+    <content><![CDATA[<p>总还是心生畏惧？悸动？为什么呢？在担心哪些被看到了就会成为既定事实而无法有所改变吗？谱写了一本预测未来的纪实吗？还是说仅仅是启动了内心的自我防御机制，太多不明白，也有太多的手足无措，逆来顺受本就没什么是准备好的。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
