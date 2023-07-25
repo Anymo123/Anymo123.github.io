@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>My New Post</title>
+    <url>/2023/07/17/My-New-Post/</url>
+    <content><![CDATA[<h1 id="关雎"><a href="#关雎" class="headerlink" title="关雎"></a>关雎</h1><p>[诗经·国风·周南] [先秦]</p>
+<p>关关雎鸠，在河之洲。窈窕淑女，君子好逑。<br>参差荇菜，左右流之。窈窕淑女，寤寐求之。<br>求之不得，寤寐思服。悠哉悠哉，辗转反侧。<br>参差荇菜，左右采之。窈窕淑女，琴瑟友之。<br>参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。</p>
+<span id="more"></span>]]></content>
+      <tags>
+        <tag>古诗词</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/07/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,16 +27,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>My New Post</title>
-    <url>/2023/07/17/My-New-Post/</url>
-    <content><![CDATA[<h1 id="关雎"><a href="#关雎" class="headerlink" title="关雎"></a>关雎</h1><p>[诗经·国风·周南] [先秦]</p>
-<p>关关雎鸠，在河之洲。窈窕淑女，君子好逑。<br>参差荇菜，左右流之。窈窕淑女，寤寐求之。<br>求之不得，寤寐思服。悠哉悠哉，辗转反侧。<br>参差荇菜，左右采之。窈窕淑女，琴瑟友之。<br>参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。</p>
-<span id="more"></span>]]></content>
-      <tags>
-        <tag>古诗词</tag>
-      </tags>
   </entry>
   <entry>
     <title>一日三餐</title>
@@ -53,13 +53,23 @@
       </tags>
   </entry>
   <entry>
+    <title>做人要学会卡bug呀</title>
+    <url>/2023/07/20/%E5%81%9A%E4%BA%BA%E8%A6%81%E5%AD%A6%E4%BC%9A%E5%8D%A1bug%E5%91%80/</url>
+    <content><![CDATA[<p>做人要学会卡bug呀，啊，哦，啦，通常这些bug都隐藏在忽视的容易，难克服的困难地下，容易和困难治之间存在太多的人了，很难再次发现新的bug。有成功写了废话文学，真不知道为什么要写这些乱七八糟，好像写出来就能帮到什么人似的，切……</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>备份豆瓣广播和日记教程</title>
     <url>/2023/07/22/%E5%A4%87%E4%BB%BD%E8%B1%86%E7%93%A3%E5%B9%BF%E6%92%AD%E5%92%8C%E6%97%A5%E8%AE%B0%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p><strong>备份豆瓣广播和日记教程</strong></p>
-<p>因为一些众所周知的原因，写在互联网的东西，很容易全部消失，备份豆瓣广播和日记到本地刻不容缓，于是搜索教程</p>
+<p>因为一些众所周知的原因，写在互联网的东西，很容易全部消失，备份豆瓣广播和日记到本地刻不容缓，<span id="more"></span>于是搜索教程</p>
 <p>备份广播和日记不是一个脚本，用到的技术工具Python，vscode</p>
-<span id="more"></span>
-
 <ol>
 <li><p>首先是备份豆瓣广播</p>
 <p><a href="https://github.com/Cosimo118/sprider_douban">豆瓣广播py文件下载</a></p>
@@ -102,18 +112,6 @@
       </categories>
       <tags>
         <tag>备份豆瓣教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>做人要学会卡bug呀</title>
-    <url>/2023/07/20/%E5%81%9A%E4%BA%BA%E8%A6%81%E5%AD%A6%E4%BC%9A%E5%8D%A1bug%E5%91%80/</url>
-    <content><![CDATA[<p>做人要学会卡bug呀，啊，哦，啦，通常这些bug都隐藏在忽视的容易，难克服的困难地下，容易和困难治之间存在太多的人了，很难再次发现新的bug。有成功写了废话文学，真不知道为什么要写这些乱七八糟，好像写出来就能帮到什么人似的，切……</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
       </tags>
   </entry>
   <entry>
@@ -484,6 +482,18 @@
       </tags>
   </entry>
   <entry>
+    <title>什么在占用你的时间？</title>
+    <url>/2023/06/03/riJi/%E4%BB%80%E4%B9%88%E5%9C%A8%E5%8D%A0%E7%94%A8%E4%BD%A0%E7%9A%84%E6%97%B6%E9%97%B4%EF%BC%9F/</url>
+    <content><![CDATA[<p>什么在占用你的时间？<br>你有没有想过什么在占用你活着的时间？很多行业都试过了，找工作赚钱，基本上可以确定违背意愿，平添烦恼，怒气，只是为了活口，想做个普通人，无论在什么社会都不那么容易，不忘初心的同时，时刻做着违背初心的事情，终究也只是个不忘罢了<br>说话为了说而说，答而说，无所谓事实本质，说的好听，又有谁知道事实本质，终究沦为了无聊狡辩的奴隶<br>说得过他们呢，他们说你想法太多，做的太少，说不过他们呢，他们就说你还年轻，经历的太少，要听话，追随他们，无论什么朝代都沦为附庸者。<br>能力比他们低，可以。能力比他们相当，就不可以，比他们高，也不可以。非要比他们高很多很多，没得天际才能显得他们伯乐的能力来<br>一切为了他们自己，别人为了自己是自私，他们为了自己是为了和平，为了正义<br>有些问题没有答案，是问题不对</p>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>什么样的电影内容才会使普通人喜欢</title>
     <url>/2023/06/23/riJi/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E7%94%B5%E5%BD%B1%E5%86%85%E5%AE%B9%E6%89%8D%E4%BC%9A%E4%BD%BF%E6%99%AE%E9%80%9A%E4%BA%BA%E5%96%9C%E6%AC%A2/</url>
     <content><![CDATA[<h4 id="什么样的电影内容才会使普通人喜欢"><a href="#什么样的电影内容才会使普通人喜欢" class="headerlink" title="什么样的电影内容才会使普通人喜欢"></a>什么样的电影内容才会使普通人喜欢</h4><p>什么样的电影内容才够普通人喜欢</p>
@@ -495,18 +505,6 @@
 <p>在从农村保卫城市，再到农村迁移城市，但中国大部分人还是留在了家乡，不知道因为什么，外地的感受始终是外地，也就是没有归属感。年轻人的流动大半取决于获得了必要的红利，例如：城市对于年轻人落户的补贴，买房的补贴，建造新兴城市学校医院配套的距离感等等。 这些福利也无可奈何的终将落幕。在这里他们足够聊以慰藉的不是不关乎他们所谓的大数据，更多的是需要有人了解他们的生活，理解他们的无奈。无论是留在家乡或是流动到了外地，电影电视剧起到的作用就越发的重要。而眼观相近里面的电影电视剧都鲜有起到这种作用，或作用不大。其实社会是否向前发展的观测标准除了让人们解决温饱外，还有幸福感。如果幸福感在下降，其实社会并不是在向前，甚至严格来说也不是后退，是社会发展出现了瑕疵。</p>
 <p>在剧本方面，最近在查阅近几年被收录的经典小说，都是些霸道总裁，皇族后裔，普通人如何走向人生巅峰的类型，不免有些让人可悲，未来的人如果有一天看到这里面的收录，会不会对这些年的发展产生厌恶和不解，就不得而知了。不知在看完霸道总裁后，又回到普通人的一生作何感想。</p>
 <p>难道是因为有人怕让后人看到现实中普通人生活的现状吗？这就有些让人不解了！难道普通人过的不好吗？</p>
-]]></content>
-      <categories>
-        <category>日记DB</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么在占用你的时间？</title>
-    <url>/2023/06/03/riJi/%E4%BB%80%E4%B9%88%E5%9C%A8%E5%8D%A0%E7%94%A8%E4%BD%A0%E7%9A%84%E6%97%B6%E9%97%B4%EF%BC%9F/</url>
-    <content><![CDATA[<p>什么在占用你的时间？<br>你有没有想过什么在占用你活着的时间？很多行业都试过了，找工作赚钱，基本上可以确定违背意愿，平添烦恼，怒气，只是为了活口，想做个普通人，无论在什么社会都不那么容易，不忘初心的同时，时刻做着违背初心的事情，终究也只是个不忘罢了<br>说话为了说而说，答而说，无所谓事实本质，说的好听，又有谁知道事实本质，终究沦为了无聊狡辩的奴隶<br>说得过他们呢，他们说你想法太多，做的太少，说不过他们呢，他们就说你还年轻，经历的太少，要听话，追随他们，无论什么朝代都沦为附庸者。<br>能力比他们低，可以。能力比他们相当，就不可以，比他们高，也不可以。非要比他们高很多很多，没得天际才能显得他们伯乐的能力来<br>一切为了他们自己，别人为了自己是自私，他们为了自己是为了和平，为了正义<br>有些问题没有答案，是问题不对</p>
 ]]></content>
       <categories>
         <category>日记DB</category>
@@ -745,6 +743,18 @@
       </tags>
   </entry>
   <entry>
+    <title>写作的目的</title>
+    <url>/2023/06/03/riJi/%E5%86%99%E4%BD%9C%E7%9A%84%E7%9B%AE%E7%9A%84/</url>
+    <content><![CDATA[<p>每一句名人名言，每一句看似有道理的话，都能在不同场景，不同时间找到完全相反的话。所以我写东西发布东西常采用疑问的方式，问题的本身就是问题的答案，只希望能通过此种方式减少对阅读者的误导，引发读者的反我像人生有什么意义。这句话本身就是问题的答案，当你采用无奈的想法去思考这个问题时，便出现了误导。如果你采用探索精神的想法时，人生有什么意义呢？就在于你问题本身就在于人生的意义，需要你去探索，实则在发布内容前经过的思虑纠结苦楚，读者也感知不到，只希望不再是那毫无意义的，一笔一划</p>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于每更换地点便持续吃一样或一家食物的讨论</title>
     <url>/2023/06/03/riJi/%E5%85%B3%E4%BA%8E%E6%AF%8F%E6%9B%B4%E6%8D%A2%E5%9C%B0%E7%82%B9%E4%BE%BF%E6%8C%81%E7%BB%AD%E5%90%83%E4%B8%80%E6%A0%B7%E6%88%96%E4%B8%80%E5%AE%B6%E9%A3%9F%E7%89%A9%E7%9A%84%E8%AE%A8%E8%AE%BA/</url>
     <content><![CDATA[<p>为什么从小到大都会有一家持续性的食物摄入？</p>
@@ -763,18 +773,6 @@
 <p>应该把注意力放在自己身上</p>
 <p>我一直经历的是过于在乎的看法，所以想要达到和谐就必须完全不在乎别人的看法，触底反弹，进入和谐状态</p>
 <p>如何调整？</p>
-]]></content>
-      <categories>
-        <category>日记DB</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>写作的目的</title>
-    <url>/2023/06/03/riJi/%E5%86%99%E4%BD%9C%E7%9A%84%E7%9B%AE%E7%9A%84/</url>
-    <content><![CDATA[<p>每一句名人名言，每一句看似有道理的话，都能在不同场景，不同时间找到完全相反的话。所以我写东西发布东西常采用疑问的方式，问题的本身就是问题的答案，只希望能通过此种方式减少对阅读者的误导，引发读者的反我像人生有什么意义。这句话本身就是问题的答案，当你采用无奈的想法去思考这个问题时，便出现了误导。如果你采用探索精神的想法时，人生有什么意义呢？就在于你问题本身就在于人生的意义，需要你去探索，实则在发布内容前经过的思虑纠结苦楚，读者也感知不到，只希望不再是那毫无意义的，一笔一划</p>
 ]]></content>
       <categories>
         <category>日记DB</category>
@@ -1651,21 +1649,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生理需求</title>
-    <url>/2023/06/04/riJi/%E7%94%9F%E7%90%86%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<p>生理需求<br>生理需求&#x3D;&#x3D;&#x3D;性+食物+开心，幸福，愉悦<br>无法获，没有拥有或不存在<br>是否意味着生理需求一直或从未满足？是否意味着从一开始追求的生理需求，不过是个笑话？<br>到底是否曾经得到或存在过？<br>假设存在并且拥有<br>生理需求得到满足等同于存在，<br>思想？</p>
-<blockquote>
-<p><img src="https://img1.doubanio.com/view/note/l/public/p94108420.jpg"></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>日记DB</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>电子游戏和现代社会人的博弈技巧</title>
     <url>/2023/06/22/riJi/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F%E5%92%8C%E7%8E%B0%E4%BB%A3%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%9A%84%E5%8D%9A%E5%BC%88%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h4 id="电子游戏和现代社会人的博弈技巧"><a href="#电子游戏和现代社会人的博弈技巧" class="headerlink" title="电子游戏和现代社会人的博弈技巧"></a>电子游戏和现代社会人的博弈技巧</h4><p>技巧在最后，根本不需要什么孙子兵法</p>
@@ -1701,6 +1684,21 @@
     <content><![CDATA[<p>什么是百合花？也许我从来一直都是知道的，也许不知道，百合真是一个好听的名字，难道不是这样吗？哦，对了，百合花有什么含义呢？玫瑰是爱情哦，不不要这样，没有任何含义，没有任何别的些什么，我要百合还是百合花，忽然对他心有所往，我应该怎么做，养他，欣赏他，不，我喜欢野生的，就像动物一样，希望他自由平等的活着，只是希望他开心，百合，百年好合。</p>
 <blockquote>
 <p><img src="https://img1.doubanio.com/view/note/l/public/p94108348.jpg"></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>日记DB</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理需求</title>
+    <url>/2023/06/04/riJi/%E7%94%9F%E7%90%86%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<p>生理需求<br>生理需求&#x3D;&#x3D;&#x3D;性+食物+开心，幸福，愉悦<br>无法获，没有拥有或不存在<br>是否意味着生理需求一直或从未满足？是否意味着从一开始追求的生理需求，不过是个笑话？<br>到底是否曾经得到或存在过？<br>假设存在并且拥有<br>生理需求得到满足等同于存在，<br>思想？</p>
+<blockquote>
+<p><img src="https://img1.doubanio.com/view/note/l/public/p94108420.jpg"></p>
 </blockquote>
 ]]></content>
       <categories>
@@ -2016,9 +2014,9 @@
       </tags>
   </entry>
   <entry>
-    <title>驴脾气肠子很倔脾气</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528142919/</url>
-    <content><![CDATA[<p>驴脾气肠子很倔脾气，牵着不走，打着倒推，常用解决办法是使用其欲望，诱惑其前行，可事总有例外，对于例外的群体，则需要顺着毛旅旅感到舒服，社会群体也是一样，找到顺着驴毛的方式，有人说很难找到这种方式，其实，所有问题的解决方法和答案都很简单，或有些许简单的组成，如果很复杂，那说明不是正解，那于没有欲望的群体，大致分为如下一，没有看到或意识到欲望事物的存在，则可通过一诺完成奖励的方式<br>奖励新事物，如果一直没兴趣，则一直提到各种有关事物，有兴趣为止，以此循环渐进<br>当然，当遇到有此类意识的人，一般见效甚微，对于此类人，则需从，小事情做起形成习惯的奖励，让其即使意识到也知道此习惯，长此以往即可<br>二意识到欲望的存在，但不可触及或欲望明显违背常规的规律，这类比上面的稍多些许步骤<br>主要途径一，欲望相关二，改变欲望这两种的前提是必须和一同时进行，只是方式和方法更为具体，一则接触欲望相关的人使其接触了解事物，欲望本身的规律承诺完成奖励，同步进行二同一方式，直到找到另类的兴趣欲望为止<br>建议小事情的奖励大于相关付出，大事情的奖励低于相关付出，使其意识到小事情的重要性，一段时间后，大事情的奖励大于相关付出，使其开始有负责承担的信心<br>除了暂时未遇到欲望的人，剩下的越年轻，欲望越小，欲望越具体，直接越老越是，每个人的欲望中间值则和成长环境，心理素质所处的地位和社会环境有关，过程略有波动，但大致不离</p>
+    <title>选择</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528143416/</url>
+    <content><![CDATA[<p>选择<br>弊：选择太多，容易迷失方向，选择其一后遇到困难和挫折容易退缩<br>利：并非所有已限制的选择都适合发展，及时发现，及时调整<br>如何区分是挫折还是不合适？一有明显身体疾病缺陷相违背的二潜在的社会规则，阻碍的三容易引起思想思维偏执的回忆过往，剩下的全是挫折</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2028,9 +2026,9 @@
       </tags>
   </entry>
   <entry>
-    <title>选择</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528143416/</url>
-    <content><![CDATA[<p>选择<br>弊：选择太多，容易迷失方向，选择其一后遇到困难和挫折容易退缩<br>利：并非所有已限制的选择都适合发展，及时发现，及时调整<br>如何区分是挫折还是不合适？一有明显身体疾病缺陷相违背的二潜在的社会规则，阻碍的三容易引起思想思维偏执的回忆过往，剩下的全是挫折</p>
+    <title>驴脾气肠子很倔脾气</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528142919/</url>
+    <content><![CDATA[<p>驴脾气肠子很倔脾气，牵着不走，打着倒推，常用解决办法是使用其欲望，诱惑其前行，可事总有例外，对于例外的群体，则需要顺着毛旅旅感到舒服，社会群体也是一样，找到顺着驴毛的方式，有人说很难找到这种方式，其实，所有问题的解决方法和答案都很简单，或有些许简单的组成，如果很复杂，那说明不是正解，那于没有欲望的群体，大致分为如下一，没有看到或意识到欲望事物的存在，则可通过一诺完成奖励的方式<br>奖励新事物，如果一直没兴趣，则一直提到各种有关事物，有兴趣为止，以此循环渐进<br>当然，当遇到有此类意识的人，一般见效甚微，对于此类人，则需从，小事情做起形成习惯的奖励，让其即使意识到也知道此习惯，长此以往即可<br>二意识到欲望的存在，但不可触及或欲望明显违背常规的规律，这类比上面的稍多些许步骤<br>主要途径一，欲望相关二，改变欲望这两种的前提是必须和一同时进行，只是方式和方法更为具体，一则接触欲望相关的人使其接触了解事物，欲望本身的规律承诺完成奖励，同步进行二同一方式，直到找到另类的兴趣欲望为止<br>建议小事情的奖励大于相关付出，大事情的奖励低于相关付出，使其意识到小事情的重要性，一段时间后，大事情的奖励大于相关付出，使其开始有负责承担的信心<br>除了暂时未遇到欲望的人，剩下的越年轻，欲望越小，欲望越具体，直接越老越是，每个人的欲望中间值则和成长环境，心理素质所处的地位和社会环境有关，过程略有波动，但大致不离</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2220,6 +2218,18 @@
       </tags>
   </entry>
   <entry>
+    <title>女性朋友技巧一衣服没有合适的衣服</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160431/</url>
+    <content><![CDATA[<p>女性朋友技巧一衣服没有合适的衣服，没有必要进行下一步，二女人不喜欢负能量，废话，男人也不喜欢说话，不包含负面信息，三，通过交流女人需要的事物力，需要工作金钱，讲述一些简单容易获取的工作内容，其他四女人喜欢夸赞学习多的美丽之类的词汇，五，不在一个女人身上浪费太多时间，女性朋友就像工作一样接触越多越气场</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>买手机要点一</title>
     <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160452/</url>
     <content><![CDATA[<p>买手机要点一，必须快充电，二像素必须好，3 nfc和收音机必须有四性价比必须高，脱离性价比的手机也就不用买了，用诺基亚就行了</p>
@@ -2259,18 +2269,6 @@
     <title>思想的闭环</title>
     <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160523/</url>
     <content><![CDATA[<p>思想的闭环，付出多少获得多少思想困惑的人，需要形成闭环负吸引法则，你有的答案，自有困惑的人被吸引到有答案的人身旁，然后形成闭环，没有形成闭环，会停止或延续下一个循环，找到需要或被需要者形成闭环，可快速前进</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>女性朋友技巧一衣服没有合适的衣服</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528160431/</url>
-    <content><![CDATA[<p>女性朋友技巧一衣服没有合适的衣服，没有必要进行下一步，二女人不喜欢负能量，废话，男人也不喜欢说话，不包含负面信息，三，通过交流女人需要的事物力，需要工作金钱，讲述一些简单容易获取的工作内容，其他四女人喜欢夸赞学习多的美丽之类的词汇，五，不在一个女人身上浪费太多时间，女性朋友就像工作一样接触越多越气场</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2460,9 +2458,9 @@
       </tags>
   </entry>
   <entry>
-    <title>花间一壶酒</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210505/</url>
-    <content><![CDATA[<p>花间一壶酒<br>喝过吗<br>不喝花间<br>什么<br>你听<br>鸟儿在唱<br>不<br>不什么<br>是你在听<br>听鸟唱<br>深呼吸<br>你还在<br>是的<br>没有花香<br>没有<br>没有酒香<br>没有<br>没有鸟唱<br>没有<br>原来如此<br>什么<br>不对吗<br>如此<br>是的<br>如此。</p>
+    <title>怜怜爱爱</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210431/</url>
+    <content><![CDATA[<p>怜怜爱爱<br>笑<br>愉<br>不多不少<br>想着想着微笑<br>何须如此<br>幻想很美甜<br>失落少许盐<br>有庆<br>我在<br>去哪了<br>一直都在<br>迟早的事<br>不<br>是最终的归宿<br>所有人的<br>不只是你我<br>在，一直都在<br>能说吗？不能<br>说什么<br>能说什么<br>想想大海吧<br>大海说什么了吗<br>坐车去听<br>不再<br>大海轻语<br>喜欢海豚<br>谁告诉你的<br>那梦说的</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2472,9 +2470,9 @@
       </tags>
   </entry>
   <entry>
-    <title>怜怜爱爱</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210431/</url>
-    <content><![CDATA[<p>怜怜爱爱<br>笑<br>愉<br>不多不少<br>想着想着微笑<br>何须如此<br>幻想很美甜<br>失落少许盐<br>有庆<br>我在<br>去哪了<br>一直都在<br>迟早的事<br>不<br>是最终的归宿<br>所有人的<br>不只是你我<br>在，一直都在<br>能说吗？不能<br>说什么<br>能说什么<br>想想大海吧<br>大海说什么了吗<br>坐车去听<br>不再<br>大海轻语<br>喜欢海豚<br>谁告诉你的<br>那梦说的</p>
+    <title>花间一壶酒</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528210505/</url>
+    <content><![CDATA[<p>花间一壶酒<br>喝过吗<br>不喝花间<br>什么<br>你听<br>鸟儿在唱<br>不<br>不什么<br>是你在听<br>听鸟唱<br>深呼吸<br>你还在<br>是的<br>没有花香<br>没有<br>没有酒香<br>没有<br>没有鸟唱<br>没有<br>原来如此<br>什么<br>不对吗<br>如此<br>是的<br>如此。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2592,9 +2590,9 @@
       </tags>
   </entry>
   <entry>
-    <title>白天能有多造</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528211337/</url>
-    <content><![CDATA[<p>白天能有多造，晚上就有多操蛋</p>
+    <title>为何要在优生优育的同时尽可能早生早育</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528211424/</url>
+    <content><![CDATA[<p>为何要在优生优育的同时尽可能早生早育，因为人活的越久就越容易沾染到可遗传给下一代的疾病，如若到了那时，所谓的优生优育也只不过是个笑话，慢性病将充斥着整个人间</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -2604,9 +2602,9 @@
       </tags>
   </entry>
   <entry>
-    <title>为何要在优生优育的同时尽可能早生早育</title>
-    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528211424/</url>
-    <content><![CDATA[<p>为何要在优生优育的同时尽可能早生早育，因为人活的越久就越容易沾染到可遗传给下一代的疾病，如若到了那时，所谓的优生优育也只不过是个笑话，慢性病将充斥着整个人间</p>
+    <title>白天能有多造</title>
+    <url>/2023/05/28/weiyiSay/%E5%BE%AE%E4%B8%8020230528211337/</url>
+    <content><![CDATA[<p>白天能有多造，晚上就有多操蛋</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -4140,9 +4138,9 @@
       </tags>
   </entry>
   <entry>
-    <title>生活第一条规则</title>
-    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529114128/</url>
-    <content><![CDATA[<p>生活第一条规则，时刻把注意力放在自己身上，否则除非有必要</p>
+    <title>为什么在金钱上懂得节制的人反而过的很惨</title>
+    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529114050/</url>
+    <content><![CDATA[<p>为什么在金钱上懂得节制的人反而过的很惨。是不是说明节制本身是有局限性的，那么一切都需要节制这句话就是句废话，至少在人类社会不行。是否有违天道和客观规律，答案是肯定的，所以惩罚机制是什么？死了以后吗？不应该是活着的时候吗？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -4152,9 +4150,9 @@
       </tags>
   </entry>
   <entry>
-    <title>为什么在金钱上懂得节制的人反而过的很惨</title>
-    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529114050/</url>
-    <content><![CDATA[<p>为什么在金钱上懂得节制的人反而过的很惨。是不是说明节制本身是有局限性的，那么一切都需要节制这句话就是句废话，至少在人类社会不行。是否有违天道和客观规律，答案是肯定的，所以惩罚机制是什么？死了以后吗？不应该是活着的时候吗？</p>
+    <title>生活第一条规则</title>
+    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529114128/</url>
+    <content><![CDATA[<p>生活第一条规则，时刻把注意力放在自己身上，否则除非有必要</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -4848,6 +4846,18 @@
       </tags>
   </entry>
   <entry>
+    <title>是不是等不及看老天爷在外面给你安排了什么节目</title>
+    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529142122/</url>
+    <content><![CDATA[<p>是不是等不及看老天爷在外面给你安排了什么节目。<br>你生命中那些伟大的瞬间，未必会在你习惯做的事情中出现。但他们会在某个不经意间悄然而至，那时你必须采取行动，必要时你一定会的，但千万别忘记有那么一天，你踏出大门的那一步将会改变你整个人生轨迹。冥冥之中上天早已安排，而且那些安排是环环相扣的，宇宙这个大时光机，每天不屑地转动着，就是为了确保在时间无涯的荒野里，出现在千万个地方中的某一处，没有早一秒，也没有晚一秒，在对的地点和对的时间里，奇迹般相遇。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>去他的人生计划</title>
     <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529142227/</url>
     <content><![CDATA[<p>去他的人生计划，生活不需要草图，你只需要融入其中，上天自会安排，你要用心聆听生活，它会告诉你怎么做，然后大胆采取行动。</p>
@@ -4863,18 +4873,6 @@
     <title>容易得也珍惜</title>
     <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529142318/</url>
     <content><![CDATA[<p>容易得也珍惜，不容易得也珍惜，只不过不再随便了，也早已过了随便的年纪了。帮别人能帮的都帮了，现在唯有帮自己了，以后才能帮更多的人，顺其自然，不强求。<br>              ———    一个自己都照顾不好却想着照顾世界的人</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>是不是等不及看老天爷在外面给你安排了什么节目</title>
-    <url>/2023/05/29/weiyiSay/%E5%BE%AE%E4%B8%8020230529142122/</url>
-    <content><![CDATA[<p>是不是等不及看老天爷在外面给你安排了什么节目。<br>你生命中那些伟大的瞬间，未必会在你习惯做的事情中出现。但他们会在某个不经意间悄然而至，那时你必须采取行动，必要时你一定会的，但千万别忘记有那么一天，你踏出大门的那一步将会改变你整个人生轨迹。冥冥之中上天早已安排，而且那些安排是环环相扣的，宇宙这个大时光机，每天不屑地转动着，就是为了确保在时间无涯的荒野里，出现在千万个地方中的某一处，没有早一秒，也没有晚一秒，在对的地点和对的时间里，奇迹般相遇。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5280,9 +5278,9 @@
       </tags>
   </entry>
   <entry>
-    <title>理想的对象</title>
-    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601125240/</url>
-    <content><![CDATA[<p>理想的对象<br>一个我能信任的人，一个坚强的人，一个内心宁静的人，一个比我好的人，一个见识过我最阴暗的一面，也依然爱我的人</p>
+    <title>衣服破了</title>
+    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601131904/</url>
+    <content><![CDATA[<p>衣服破了，可以补，房子倒了也可以改，东西坏了也可以修，只是这人心啊，一旦受伤好难恢复，受过伤的心，需用真心来修补<br>注定要用生命写故事的人，<br>人生最大的美德是饶恕<br>月倚西楼更鼓罢，不打更<br>渔夫收网转回家，不打鱼<br>雨过天晴何需伞，不打伞<br>铁匠熄灯正喝茶，不打铁<br>樵夫担柴早下山，不打柴<br>猎户唤狗收猎叉，不打猎<br>美人下了秋千架，不打秋千<br>由郎改行谋生涯，不打油<br>人老不堪棒槌苦，祈求皇上饶恕他<br>电视剧台词<br>八个不打</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5292,9 +5290,9 @@
       </tags>
   </entry>
   <entry>
-    <title>衣服破了</title>
-    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601131904/</url>
-    <content><![CDATA[<p>衣服破了，可以补，房子倒了也可以改，东西坏了也可以修，只是这人心啊，一旦受伤好难恢复，受过伤的心，需用真心来修补<br>注定要用生命写故事的人，<br>人生最大的美德是饶恕<br>月倚西楼更鼓罢，不打更<br>渔夫收网转回家，不打鱼<br>雨过天晴何需伞，不打伞<br>铁匠熄灯正喝茶，不打铁<br>樵夫担柴早下山，不打柴<br>猎户唤狗收猎叉，不打猎<br>美人下了秋千架，不打秋千<br>由郎改行谋生涯，不打油<br>人老不堪棒槌苦，祈求皇上饶恕他<br>电视剧台词<br>八个不打</p>
+    <title>理想的对象</title>
+    <url>/2023/06/01/weiyiSay/%E5%BE%AE%E4%B8%8020230601125240/</url>
+    <content><![CDATA[<p>理想的对象<br>一个我能信任的人，一个坚强的人，一个内心宁静的人，一个比我好的人，一个见识过我最阴暗的一面，也依然爱我的人</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5352,18 +5350,6 @@
       </tags>
   </entry>
   <entry>
-    <title>葫芦娃背后的隐喻</title>
-    <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602160115/</url>
-    <content><![CDATA[<p>葫芦娃背后的隐喻<br>一，大娃力大无穷，代表社会个人能力出众者，妖精选择对付他的方法，且用法宝钱，隐喻，即使个人能力再出众，也难逃金钱的诱惑，最终掉进了钱眼里<br>二，二娃千里眼和顺风耳。代表社会中明辨是非之人，妖精们，用妖风对付他，隐喻对付这样的人就要歪风邪气，让他瞎了眼<br>三，三娃，刀枪不入，代表社会上百毒不侵的清廉之人妖精们对付他的办法是小邪隐喻。在清廉的人也抵挡不住别人给你穿小鞋，让你举步维艰<br>四，四娃会喷火，妖精们就让他烧大锅饭，隐喻在大锅饭面前，个别干实事的人即使能力再强，也是会被折损<br>五，五娃会控水妖精们就让他吸了一肚子脏水，隐喻那些社会上有一肚子坏水的人，最终可能害的是自己<br>六，六娃会隐身隐喻，就算社会上有装作透明人，不发表意见，不站队，仍然会出事儿，最终被安上了小尾巴，扣上了大帽子<br>七，七娃有个厉害的小葫芦，可令妖精们害怕的厉害，葫芦却被蛀虫从内部把它给破坏掉</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>渐渐的明白了一些</title>
     <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602161549/</url>
     <content><![CDATA[<p>渐渐的明白了一些，也渐渐的觉得你不对</p>
@@ -5379,6 +5365,18 @@
     <title>如何解决精神内耗</title>
     <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602162921/</url>
     <content><![CDATA[<p>如何解决精神内耗<br>每一个幻想都是精神内耗的来源<br>解决精神内耗的方法便是专注某一件事情<br>人的大脑不能闲下来，一闲下来就容易胡思乱想，这种机制很讨厌，但也没别的什么办法<br>专注于看书，专注于做事，专注于看电影。<br>听音乐反而助长了精神内耗，所以不是很建议听音乐<br>所以一定要开心啊，如果一不小心进入了幻想，进入了精神内耗，也不要自责，尽快抽身出来便可以了，再次进入于专注状态</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>葫芦娃背后的隐喻</title>
+    <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602160115/</url>
+    <content><![CDATA[<p>葫芦娃背后的隐喻<br>一，大娃力大无穷，代表社会个人能力出众者，妖精选择对付他的方法，且用法宝钱，隐喻，即使个人能力再出众，也难逃金钱的诱惑，最终掉进了钱眼里<br>二，二娃千里眼和顺风耳。代表社会中明辨是非之人，妖精们，用妖风对付他，隐喻对付这样的人就要歪风邪气，让他瞎了眼<br>三，三娃，刀枪不入，代表社会上百毒不侵的清廉之人妖精们对付他的办法是小邪隐喻。在清廉的人也抵挡不住别人给你穿小鞋，让你举步维艰<br>四，四娃会喷火，妖精们就让他烧大锅饭，隐喻在大锅饭面前，个别干实事的人即使能力再强，也是会被折损<br>五，五娃会控水妖精们就让他吸了一肚子脏水，隐喻那些社会上有一肚子坏水的人，最终可能害的是自己<br>六，六娃会隐身隐喻，就算社会上有装作透明人，不发表意见，不站队，仍然会出事儿，最终被安上了小尾巴，扣上了大帽子<br>七，七娃有个厉害的小葫芦，可令妖精们害怕的厉害，葫芦却被蛀虫从内部把它给破坏掉</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5592,6 +5590,18 @@
       </tags>
   </entry>
   <entry>
+    <title>有人说一个小小的善举也比无限大的善意高大</title>
+    <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602171641/</url>
+    <content><![CDATA[<p>有人说一个小小的善举也比无限大的善意高大</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个人要有自己的秘密</title>
     <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602171621/</url>
     <content><![CDATA[<p>一个人要有自己的秘密，否则就像透明纸一样，别人都将透过你这张纸去看别的秘密</p>
@@ -5607,18 +5617,6 @@
     <title>活在自己精神世界的理想主义者和活在别人创造世界的现实主义者都会遇到相同的问题</title>
     <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602171702/</url>
     <content><![CDATA[<p>活在自己精神世界的理想主义者和活在别人创造世界的现实主义者都会遇到相同的问题<br>别人的人生体验是不许其他人评价的，除非干扰到这些，其他人自己的体验要留给自己</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有人说一个小小的善举也比无限大的善意高大</title>
-    <url>/2023/06/02/weiyiSay/%E5%BE%AE%E4%B8%8020230602171641/</url>
-    <content><![CDATA[<p>有人说一个小小的善举也比无限大的善意高大</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5844,9 +5842,9 @@
       </tags>
   </entry>
   <entry>
-    <title>一个人只知道索取而不知道付出</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115448/</url>
-    <content><![CDATA[<p>一个人只知道索取而不知道付出，无论怎样都会功败垂成。一个人一直被索取却不曾得到，无论怎样都会枯竭。粮无穗花无根<br>一个群体，一个世界，不停的索取，枯竭后还妄想得到，无耻</p>
+    <title>这世界充斥着很多声音</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115504/</url>
+    <content><![CDATA[<p>这世界充斥着很多声音，有些人还觉得你应该去死，伤害别人使他们感到优越，宣扬自己的声音使他们感到自由。远离这些声音，保持原有的步伐前进，去抵达本该属于你的终点</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -5856,9 +5854,9 @@
       </tags>
   </entry>
   <entry>
-    <title>这世界充斥着很多声音</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115504/</url>
-    <content><![CDATA[<p>这世界充斥着很多声音，有些人还觉得你应该去死，伤害别人使他们感到优越，宣扬自己的声音使他们感到自由。远离这些声音，保持原有的步伐前进，去抵达本该属于你的终点</p>
+    <title>一个人只知道索取而不知道付出</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603115448/</url>
+    <content><![CDATA[<p>一个人只知道索取而不知道付出，无论怎样都会功败垂成。一个人一直被索取却不曾得到，无论怎样都会枯竭。粮无穗花无根<br>一个群体，一个世界，不停的索取，枯竭后还妄想得到，无耻</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6096,18 +6094,6 @@
       </tags>
   </entry>
   <entry>
-    <title>这可笑的世界</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143056/</url>
-    <content><![CDATA[<p>这可笑的世界<br>你去努力争取并一定得到，而得到之后还要一直取悦某人，某事某物，否则就失去了这得到。如此的可笑</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>他们用别人的未知来显示自己的强大智慧</title>
     <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143432/</url>
     <content><![CDATA[<p>他们用别人的未知来显示自己的强大智慧，用以掩盖自己的弱小愚蠢</p>
@@ -6120,9 +6106,9 @@
       </tags>
   </entry>
   <entry>
-    <title>说别人脏话的人一直都在被脏话埋没</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143454/</url>
-    <content><![CDATA[<p>说别人脏话的人一直都在被脏话埋没，而不自知</p>
+    <title>这可笑的世界</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143056/</url>
+    <content><![CDATA[<p>这可笑的世界<br>你去努力争取并一定得到，而得到之后还要一直取悦某人，某事某物，否则就失去了这得到。如此的可笑</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6132,9 +6118,9 @@
       </tags>
   </entry>
   <entry>
-    <title>所坚持的越久</title>
-    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143554/</url>
-    <content><![CDATA[<p>所坚持的越久，阻力就会越大，任何人，任何事物都会使人越加坚强，这也更加证明了所做的事情的必要性。在一个人都互相欺骗的世界，做一个诚实的人，反而会被别人当做害群之马<br>烦，不烦<br>当有人使他们不如愿时，他们便会使用伤害别人的手段，这已经是不争的事实了，他们都要做到何种地步？老人，孩子，他们依然不放过，毫无敬畏之心，毫无底线<br>皆是无用，无可奈何之象，似是无存在的缘由。万般皆是乱折腾</p>
+    <title>说别人脏话的人一直都在被脏话埋没</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143454/</url>
+    <content><![CDATA[<p>说别人脏话的人一直都在被脏话埋没，而不自知</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6159,6 +6145,18 @@
     <title>遇到问题在解决问题之后</title>
     <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603164700/</url>
     <content><![CDATA[<p>遇到问题在解决问题之后，要记得备案，问题以及解决问题的方式方法，以防止再次遇到而，浪费不必要的时间</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>所坚持的越久</title>
+    <url>/2023/06/03/weiyiSay/%E5%BE%AE%E4%B8%8020230603143554/</url>
+    <content><![CDATA[<p>所坚持的越久，阻力就会越大，任何人，任何事物都会使人越加坚强，这也更加证明了所做的事情的必要性。在一个人都互相欺骗的世界，做一个诚实的人，反而会被别人当做害群之马<br>烦，不烦<br>当有人使他们不如愿时，他们便会使用伤害别人的手段，这已经是不争的事实了，他们都要做到何种地步？老人，孩子，他们依然不放过，毫无敬畏之心，毫无底线<br>皆是无用，无可奈何之象，似是无存在的缘由。万般皆是乱折腾</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6900,9 +6898,9 @@
       </tags>
   </entry>
   <entry>
-    <title>生活你总会遇到看到这种人</title>
-    <url>/2023/06/06/weiyiSay/%E5%BE%AE%E4%B8%8020230606203736/</url>
-    <content><![CDATA[<p>生活你总会遇到看到这种人，仅仅有什么（a）是不够的，如果没有什么（b）是不行的，不能够得到的。举例：仅仅读书时不够的，你还要有足够的智慧，否则你是无法明白的。遇到这种人（这种人太多了，很容易被动摇蛊惑），听到这种话，你要做的就只有一个，打他呀的，骂他呀的。然后继续走该走的路，趟该过的河。</p>
+    <title>很有趣</title>
+    <url>/2023/06/06/weiyiSay/%E5%BE%AE%E4%B8%8020230606220424/</url>
+    <content><![CDATA[<p>很有趣，人类往往是那些不自觉做出的行为才是最有利于健康的，比方说不自觉打哈欠，伸懒腰。而那些思虑咨询后所做出的行为往往是徒劳的，多余的，画蛇添足的。所以身体有什么自然的反应，不自觉的反应就随他去吧，顺着来。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -6912,9 +6910,9 @@
       </tags>
   </entry>
   <entry>
-    <title>很有趣</title>
-    <url>/2023/06/06/weiyiSay/%E5%BE%AE%E4%B8%8020230606220424/</url>
-    <content><![CDATA[<p>很有趣，人类往往是那些不自觉做出的行为才是最有利于健康的，比方说不自觉打哈欠，伸懒腰。而那些思虑咨询后所做出的行为往往是徒劳的，多余的，画蛇添足的。所以身体有什么自然的反应，不自觉的反应就随他去吧，顺着来。</p>
+    <title>生活你总会遇到看到这种人</title>
+    <url>/2023/06/06/weiyiSay/%E5%BE%AE%E4%B8%8020230606203736/</url>
+    <content><![CDATA[<p>生活你总会遇到看到这种人，仅仅有什么（a）是不够的，如果没有什么（b）是不行的，不能够得到的。举例：仅仅读书时不够的，你还要有足够的智慧，否则你是无法明白的。遇到这种人（这种人太多了，很容易被动摇蛊惑），听到这种话，你要做的就只有一个，打他呀的，骂他呀的。然后继续走该走的路，趟该过的河。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -7140,9 +7138,9 @@
       </tags>
   </entry>
   <entry>
-    <title>这个世界每个人都是孤独的</title>
-    <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608164843/</url>
-    <content><![CDATA[<p>这个世界每个人都是孤独的，但往往是那一段孤独的过往，才让你之所以成为你，才让你拥有了谁也比拟不了的内心。不要害怕沦落孤独，因为孤独，能让我们看清自己。也许我们曾愁寸难行，也许我们曾忘却生命的意义，那都没关系，因为 —我们—拥有勇气–坚持到底！</p>
+    <title>我在前进的路上</title>
+    <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608164306/</url>
+    <content><![CDATA[<p>我在前进的路上，也不曾停下，有时走在路上，有时走在梦中，错过了一些机会不一定不好，继续走无论现在或是未来，过去也一直陪着我</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -7164,6 +7162,18 @@
       </tags>
   </entry>
   <entry>
+    <title>这个世界每个人都是孤独的</title>
+    <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608164843/</url>
+    <content><![CDATA[<p>这个世界每个人都是孤独的，但往往是那一段孤独的过往，才让你之所以成为你，才让你拥有了谁也比拟不了的内心。不要害怕沦落孤独，因为孤独，能让我们看清自己。也许我们曾愁寸难行，也许我们曾忘却生命的意义，那都没关系，因为 —我们—拥有勇气–坚持到底！</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>得之不见其已</title>
     <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608165253/</url>
     <content><![CDATA[<p>得之不见其已，失之不见其得</p>
@@ -7176,33 +7186,21 @@
       </tags>
   </entry>
   <entry>
-    <title>如果让你在</title>
-    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609182332/</url>
-    <content><![CDATA[<p>如果让你在&lt;合适的&gt;和（适合的）中间做选择，你们会选择哪个？还是选择他妈的 (差不多得了)</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我在前进的路上</title>
-    <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608164306/</url>
-    <content><![CDATA[<p>我在前进的路上，也不曾停下，有时走在路上，有时走在梦中，错过了一些机会不一定不好，继续走无论现在或是未来，过去也一直陪着我</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>长居山上风大</title>
     <url>/2023/06/08/weiyiSay/%E5%BE%AE%E4%B8%8020230608165413/</url>
     <content><![CDATA[<p>长居山上风大，催磨。忽一日，风小，不敢信，异常。或高度有所变化？于是乎，上山下山来回折返多次。或短暂的假象？于是乎，感查多日。终疲倦不堪，时日不多。回顾过去，终是虚无，何以至此，风大又如何，风小又如何，放下执念一心向善，不因假象而乱动，静以修心，动以健骨。万物有规律，事情有周期。做该做之事，行该行之路，自然。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如果让你在</title>
+    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609182332/</url>
+    <content><![CDATA[<p>如果让你在&lt;合适的&gt;和（适合的）中间做选择，你们会选择哪个？还是选择他妈的 (差不多得了)</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -7272,9 +7270,9 @@
       </tags>
   </entry>
   <entry>
-    <title>负能量</title>
-    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609183504/</url>
-    <content><![CDATA[<p>负能量～无所谓的人做着无所谓的事引起的对周围人有所谓的影响！</p>
+    <title>人总是要找些事情打发愚昧无知时人生多余的时间</title>
+    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609183406/</url>
+    <content><![CDATA[<p>人总是要找些事情打发愚昧无知时人生多余的时间</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -7284,9 +7282,9 @@
       </tags>
   </entry>
   <entry>
-    <title>人总是要找些事情打发愚昧无知时人生多余的时间</title>
-    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609183406/</url>
-    <content><![CDATA[<p>人总是要找些事情打发愚昧无知时人生多余的时间</p>
+    <title>负能量</title>
+    <url>/2023/06/09/weiyiSay/%E5%BE%AE%E4%B8%8020230609183504/</url>
+    <content><![CDATA[<p>负能量～无所谓的人做着无所谓的事引起的对周围人有所谓的影响！</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10188,18 +10186,6 @@
       </tags>
   </entry>
   <entry>
-    <title>清晨我站在高高的骨灰旁边</title>
-    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704214830/</url>
-    <content><![CDATA[<p>清晨我站在高高的骨灰旁边。本来想写的是，清晨我站在高高的谷堆旁边。这有些魔性的歌曲一旦听了，这脑海便再也没有机会正经了……</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>微一说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一个人记忆如果同一时间记录了两件事情关于钱的</title>
     <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704221623/</url>
     <content><![CDATA[<p>一个人记忆如果同一时间记录了两件事情关于钱的，记忆偏差人性往往会偏向于得利多或亏损少的一部分。<br>举例，一个是转500，一个是转200，在没有可能查账单的情况下，借给别人记忆是500，别人借给自己记忆是200。<br>再举个例子，去理发店，给现金，几十块，回过头，你就总顾虑是不是给多了，是不是遮挡了视线夹在中间还有一部分钱。</p>
@@ -10227,6 +10213,18 @@
     <title>信任很容易产生耐药性</title>
     <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705083556/</url>
     <content><![CDATA[<p>信任很容易产生耐药性，所以没什么事别在那折腾别人对你的信任，自己对别人的信任，你对环境的信任，环境对你的信任。时间久了就没脸再说我什么都做了，为什么一点反应没有。还是换个地方再“对症下药”，希望你不会遭遇天谴…</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>微一说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清晨我站在高高的骨灰旁边</title>
+    <url>/2023/07/04/weiyiSay/%E5%BE%AE%E4%B8%8020230704214830/</url>
+    <content><![CDATA[<p>清晨我站在高高的骨灰旁边。本来想写的是，清晨我站在高高的谷堆旁边。这有些魔性的歌曲一旦听了，这脑海便再也没有机会正经了……</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10284,9 +10282,9 @@
       </tags>
   </entry>
   <entry>
-    <title>我此刻的想法还是我之前思考的问题吗</title>
-    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705100301/</url>
-    <content><![CDATA[<p>我此刻的想法还是我之前思考的问题吗？似乎一个想法，一个念头，就写个喋喋不休。也不知是先有的喋喋不休还是先有的念头，慢慢的已然是分不清了，我的心情里藏着个同样的秘密，但我不知道是什么？或许需要个念头一样的钥匙，就像宿命，这令人心痒的模糊的美丽…</p>
+    <title>有一天蚂蚁经过</title>
+    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705095017/</url>
+    <content><![CDATA[<p>有一天蚂蚁经过，说了句，早上好，这人就吓死了！它什么时候出现的能力？踩死它，踩死它，丝毫不给什么机会，不管什么缘由，你说话就是死罪…就该被踩死…</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10296,9 +10294,9 @@
       </tags>
   </entry>
   <entry>
-    <title>有一天蚂蚁经过</title>
-    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705095017/</url>
-    <content><![CDATA[<p>有一天蚂蚁经过，说了句，早上好，这人就吓死了！它什么时候出现的能力？踩死它，踩死它，丝毫不给什么机会，不管什么缘由，你说话就是死罪…就该被踩死…</p>
+    <title>我此刻的想法还是我之前思考的问题吗</title>
+    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705100301/</url>
+    <content><![CDATA[<p>我此刻的想法还是我之前思考的问题吗？似乎一个想法，一个念头，就写个喋喋不休。也不知是先有的喋喋不休还是先有的念头，慢慢的已然是分不清了，我的心情里藏着个同样的秘密，但我不知道是什么？或许需要个念头一样的钥匙，就像宿命，这令人心痒的模糊的美丽…</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10344,9 +10342,9 @@
       </tags>
   </entry>
   <entry>
-    <title>有小黑蚊子</title>
-    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705124823/</url>
-    <content><![CDATA[<p>有小黑蚊子，小心了，偷咬你，还不显形。</p>
+    <title>我还不知道自己是谁</title>
+    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705123613/</url>
+    <content><![CDATA[<p>我还不知道自己是谁，是不是意味着自己产出的东西却有如此的陌生感，新鲜感。仿佛不是这个我写的，做的，而是另一个我写的，做的？<br>找到自我是不是意味着抛弃另一个我？和谐？找不到产出的我，就没办法刻意产出，就没办法由此交换获得活下去资源…！顺其自然吧，刻舟求剑的事我做的太多了，知道刻意追求反而追求不到，即使追求到了味道也变了，实非我所愿，顺其自然就好…</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -10356,9 +10354,9 @@
       </tags>
   </entry>
   <entry>
-    <title>我还不知道自己是谁</title>
-    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705123613/</url>
-    <content><![CDATA[<p>我还不知道自己是谁，是不是意味着自己产出的东西却有如此的陌生感，新鲜感。仿佛不是这个我写的，做的，而是另一个我写的，做的？<br>找到自我是不是意味着抛弃另一个我？和谐？找不到产出的我，就没办法刻意产出，就没办法由此交换获得活下去资源…！顺其自然吧，刻舟求剑的事我做的太多了，知道刻意追求反而追求不到，即使追求到了味道也变了，实非我所愿，顺其自然就好…</p>
+    <title>有小黑蚊子</title>
+    <url>/2023/07/05/weiyiSay/%E5%BE%AE%E4%B8%8020230705124823/</url>
+    <content><![CDATA[<p>有小黑蚊子，小心了，偷咬你，还不显形。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -11028,9 +11026,9 @@
       </tags>
   </entry>
   <entry>
-    <title>你光有能力没有颜值就该干嘛干嘛去</title>
-    <url>/2023/07/10/weiyiSay/%E5%BE%AE%E4%B8%8020230710072933/</url>
-    <content><![CDATA[<p>你光有能力没有颜值就该干嘛干嘛去……<br>你光有颜值没有能力就改干嘛干嘛去……<br>有意思</p>
+    <title>在小小的花园里挖呀挖呀挖</title>
+    <url>/2023/07/10/weiyiSay/%E5%BE%AE%E4%B8%8020230710074003/</url>
+    <content><![CDATA[<p>在小小的花园里挖呀挖呀挖，今天搜这个，发现歌词版本都有好几个，你看看他们多厉害，拿过来复制模仿，又又技术突破了，超越了。<br>世界本不复杂，人心有了各自的欲望就混乱的多了，不仅要坐婊子，还要立牌坊。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -11040,9 +11038,9 @@
       </tags>
   </entry>
   <entry>
-    <title>在小小的花园里挖呀挖呀挖</title>
-    <url>/2023/07/10/weiyiSay/%E5%BE%AE%E4%B8%8020230710074003/</url>
-    <content><![CDATA[<p>在小小的花园里挖呀挖呀挖，今天搜这个，发现歌词版本都有好几个，你看看他们多厉害，拿过来复制模仿，又又技术突破了，超越了。<br>世界本不复杂，人心有了各自的欲望就混乱的多了，不仅要坐婊子，还要立牌坊。</p>
+    <title>你光有能力没有颜值就该干嘛干嘛去</title>
+    <url>/2023/07/10/weiyiSay/%E5%BE%AE%E4%B8%8020230710072933/</url>
+    <content><![CDATA[<p>你光有能力没有颜值就该干嘛干嘛去……<br>你光有颜值没有能力就改干嘛干嘛去……<br>有意思</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -12360,9 +12358,9 @@
       </tags>
   </entry>
   <entry>
-    <title>统计失业怎么统计的</title>
-    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723103927/</url>
-    <content><![CDATA[<p>统计失业怎么统计的，每周工作一小时就不算失业，不失业登记的也不算失业。很好奇这一个小时是谁在统计？</p>
+    <title>小白兔和大灰狼</title>
+    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723095957/</url>
+    <content><![CDATA[<p>小白兔和大灰狼。以前总听故事，后来发现故事并不仅仅是故事。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -12372,9 +12370,9 @@
       </tags>
   </entry>
   <entry>
-    <title>小白兔和大灰狼</title>
-    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723095957/</url>
-    <content><![CDATA[<p>小白兔和大灰狼。以前总听故事，后来发现故事并不仅仅是故事。</p>
+    <title>统计失业怎么统计的</title>
+    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723103927/</url>
+    <content><![CDATA[<p>统计失业怎么统计的，每周工作一小时就不算失业，不失业登记的也不算失业。很好奇这一个小时是谁在统计？</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -12456,9 +12454,9 @@
       </tags>
   </entry>
   <entry>
-    <title>为了不和众所周知相同</title>
-    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723130700/</url>
-    <content><![CDATA[<p>为了不和众所周知相同，为了找出不同的方式，不同路，最终沦为了天下先的奴隶，以致心力交瘁，遍体鳞伤，不知为何，感觉不只是后悔，还有些许欣喜，实不知其源，乐此不疲，就好像寻来寻去，才发现自己做的是对的。</p>
+    <title>你今天看今天的新闻资讯</title>
+    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723130638/</url>
+    <content><![CDATA[<p>你今天看今天的新闻资讯，和一个月后当天看当天的资讯，有什么不同，没有什么不同，很多时候都是自以为了解到了什么，其实没有会告诉你信息差，你需要的信息差，各自有各自的目的罢了，所以你现在要做的事情就一天，想看就看，不想看，就不看，不再刻意去看，你需要的多没什么用，所以你想的也会是没什么用，所以思考想或不想没什么意义。那要想或者别的什么嘛？很自然的需要，就像大脑需要一个指令一样，并非所有指令都会完成。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
@@ -12468,9 +12466,9 @@
       </tags>
   </entry>
   <entry>
-    <title>你今天看今天的新闻资讯</title>
-    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723130638/</url>
-    <content><![CDATA[<p>你今天看今天的新闻资讯，和一个月后当天看当天的资讯，有什么不同，没有什么不同，很多时候都是自以为了解到了什么，其实没有会告诉你信息差，你需要的信息差，各自有各自的目的罢了，所以你现在要做的事情就一天，想看就看，不想看，就不看，不再刻意去看，你需要的多没什么用，所以你想的也会是没什么用，所以思考想或不想没什么意义。那要想或者别的什么嘛？很自然的需要，就像大脑需要一个指令一样，并非所有指令都会完成。</p>
+    <title>为了不和众所周知相同</title>
+    <url>/2023/07/23/weiyiSay/%E5%BE%AE%E4%B8%8020230723130700/</url>
+    <content><![CDATA[<p>为了不和众所周知相同，为了找出不同的方式，不同路，最终沦为了天下先的奴隶，以致心力交瘁，遍体鳞伤，不知为何，感觉不只是后悔，还有些许欣喜，实不知其源，乐此不疲，就好像寻来寻去，才发现自己做的是对的。</p>
 <span id="more"></span>]]></content>
       <categories>
         <category>随笔</category>
